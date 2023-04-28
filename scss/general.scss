@@ -1,3 +1,4 @@
+// Сброс стилей
 html,
 body,
 div,
@@ -30,6 +31,10 @@ video {
     padding: 0;
     font-size: 100%;
     vertical-align: baseline;
+}
+
+address {
+    font-style: normal;
 }
 
 a {
@@ -146,7 +151,64 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: none;
 }
+// Фильтр яндекс карт
+[class*="ymaps-2-1"][class*="-ground-pane"] {
+    -webkit-filter: grayscale(100%);
+}
 
-// [class*="ymaps-2-1"][class*="-ground-pane"] {
-//     -webkit-filter: grayscale(100%);
-// }
+.fixed {
+    &__contacts {
+        position: fixed;
+        left: 45px;
+        top: 70%;
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+    }
+    &__addr {
+        position: fixed;
+        left: -4.7%;
+        top: 43%;
+        transform: rotate(-90deg);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--light-gray-color);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        &::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            background: var(--main-yell-color);
+            right: calc(100% + 7px);
+        }
+    }
+
+    &__scls {
+        position: fixed;
+        left: 45px;
+        bottom: 10%;
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+        }
+
+        &_item {
+            & a svg path {
+                transition: all var(--transition-duration);
+            }
+
+            &:hover a svg path {
+                fill: var(--hover-yell-color);
+            }
+        }
+    }
+}

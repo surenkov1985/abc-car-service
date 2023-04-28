@@ -32,6 +32,10 @@ video {
   vertical-align: baseline;
 }
 
+address {
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
@@ -52,6 +56,7 @@ img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -66,13 +71,15 @@ h6 {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :focus {
@@ -121,6 +128,7 @@ button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -140,4 +148,73 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: none;
-}/*# sourceMappingURL=general.css.map */
+}
+
+[class*=ymaps-2-1][class*=-ground-pane] {
+  -webkit-filter: grayscale(100%);
+}
+
+.fixed__contacts {
+  position: fixed;
+  left: 45px;
+  top: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.fixed__addr {
+  position: fixed;
+  left: -4.7%;
+  top: 43%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--light-gray-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.fixed__addr::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--main-yell-color);
+  right: calc(100% + 7px);
+}
+.fixed__scls {
+  position: fixed;
+  left: 45px;
+  bottom: 10%;
+}
+.fixed__scls_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+.fixed__scls_item a svg path {
+  -webkit-transition: all var(--transition-duration);
+  transition: all var(--transition-duration);
+}
+.fixed__scls_item:hover a svg path {
+  fill: var(--hover-yell-color);
+}

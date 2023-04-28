@@ -1,4 +1,102 @@
 body {
     width: 100%;
     min-width: 320px;
+    height: 100%;
+    min-height: 100vh;
+    font-family: var(--text-font);
+    background: var(--dark-gray-color);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width:100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo {
+    & svg path {
+        transition: all var(--transition-duration);
+    }
+    &:hover svg path {
+        fill: var(--hover-yell-color);
+    }
+}
+.nav-link {
+    color: var(--white-color);
+    transition: all var(--transition-duration);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    line-height: 120%;
+
+    & svg rect {
+        transition: all var(--transition-duration);
+    }
+
+    &:hover {
+        color: var(--hover-yell-color);
+
+        & svg rect {
+            fill: var(--hover-yell-color);
+        }
+    }
+}
+.phone-link {
+    color: var(--light-gray-color);
+    transition: all var(--transition-duration);
+    font-size: 24px;
+    line-height: 135%;  
+
+    &:hover {
+        color: var(--hover-yell-color);
+
+        & svg rect {
+            fill: var(--hover-yell-color);
+        }
+    }
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all var(--transition-duration);
+
+    &-yell {
+        background: var(--main-yell-color);
+        color: var(--bg-color);
+
+        &:hover {
+            background: var(--hover-yell-color);
+        }
+    }
+}
+
+.h1 {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    color: var(--light-gray-color);
+    text-transform: uppercase;
+}
+
+.h2 {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--light-gray-color);
+    text-transform: uppercase;
 }
