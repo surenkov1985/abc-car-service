@@ -165,6 +165,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.services__title-row .h2 {
+  text-transform: uppercase;
+}
 .services__more {
   font-weight: 700;
   font-size: 18px;
@@ -192,15 +195,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all var(--transition-duration);
+  transition: all var(--transition-duration);
+  will-change: transform;
 }
 .services__more:hover {
   color: var(--hover-yell-color);
 }
 .services__more:hover span {
   background: var(--hover-yell-color);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.services__more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .services__bottom {
   padding: 360px 45px 130px;
+  position: relative;
 }
 .services__cards {
   margin-top: 68px;
@@ -265,11 +279,6 @@
   color: var(--main-yell-color);
 }
 .services__card_title {
-  font-family: var(--title-font);
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 120%;
-  color: var(--white-color);
   max-width: 390px;
   text-transform: uppercase;
 }
@@ -291,4 +300,128 @@
   left: 50%;
   -webkit-transform: translate(-50%, -85%);
           transform: translate(-50%, -85%);
+}
+.services__subtitle {
+  margin-top: 115px;
+}
+.services__items {
+  margin-top: 50px;
+  gap: 20px 15px;
+}
+.services__promo_card {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.services__promo_card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.32)), to(rgba(0, 0, 0, 0.32))), url(image.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(image.png);
+  padding: 85px 110px;
+}
+.services__promo_card-title {
+  text-transform: uppercase;
+  max-width: 50%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.services__promo_card-title span {
+  color: var(--main-yell-color);
+}
+.services__promo-l-image, .services__promo-s-image {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.services__promo-l-image {
+  right: 8.7692307692%;
+}
+.services__promo-s-image {
+  right: 16.5384615385%;
+}
+.services__advantages {
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+.services__advantages_item {
+  width: 25%;
+  padding-right: 60px;
+}
+.services__advantages_item-title {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: var(--white-color);
+}
+.services__advantages_item-text {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--light-text-color);
+}
+.services__slider .swiper-pagination {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.services__slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #3B434A;
+  opacity: 1;
+}
+.services__slider .swiper-pagination-bullet-active {
+  background: #FFFFFF;
+}
+.services__slider-container {
+  position: relative;
+}
+.services__slider-container .swiper-button-prev, .services__slider-container .swiper-button-next {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #3B434A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all var(--transition-duration);
+  transition: all var(--transition-duration);
+}
+.services__slider-container .swiper-button-prev::after, .services__slider-container .swiper-button-next::after {
+  content: none;
+}
+.services__slider-container .swiper-button-prev:hover, .services__slider-container .swiper-button-next:hover {
+  background: var(--bg-color);
+}
+.services__slider-container .swiper-button-next {
+  -webkit-transform: rotate(-180deg) translateY(50%);
+          transform: rotate(-180deg) translateY(50%);
+}
+@media (min-width: 1670px) {
+  .services__slider-container .swiper-button-next {
+    left: calc(100% + 40px);
+    right: auto;
+  }
+}
+@media (min-width: 1670px) {
+  .services__slider-container .swiper-button-prev {
+    right: calc(100% + 40px);
+    left: auto;
+  }
 }

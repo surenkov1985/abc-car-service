@@ -72,6 +72,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all var(--transition-duration);
+    display: block;
 
     &-yell {
         background: var(--main-yell-color);
@@ -81,7 +82,20 @@ body {
             background: var(--hover-yell-color);
         }
     }
+    &-light {
+        background: var(--white-color);
+        color: var(--bg-color);
+
+        &:hover {
+            background: var(--light-gray-color);
+        }
+    }
 }
+.sm-btn {
+    padding: 10px 21px;
+    border-radius: 40px;
+}
+
 
 .h1 {
     font-family: var(--title-font);
@@ -98,5 +112,21 @@ body {
     font-size: 40px;
     line-height: 120%;
     color: var(--light-gray-color);
-    text-transform: uppercase;
+    
+}
+
+.h3 {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    color: var(--light-gray-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }

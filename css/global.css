@@ -81,6 +81,7 @@ body {
   cursor: pointer;
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
+  display: block;
 }
 .btn-yell {
   background: var(--main-yell-color);
@@ -88,6 +89,18 @@ body {
 }
 .btn-yell:hover {
   background: var(--hover-yell-color);
+}
+.btn-light {
+  background: var(--white-color);
+  color: var(--bg-color);
+}
+.btn-light:hover {
+  background: var(--light-gray-color);
+}
+
+.sm-btn {
+  padding: 10px 21px;
+  border-radius: 40px;
 }
 
 .h1 {
@@ -105,5 +118,23 @@ body {
   font-size: 40px;
   line-height: 120%;
   color: var(--light-gray-color);
-  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: var(--light-gray-color);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }

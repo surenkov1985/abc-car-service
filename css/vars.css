@@ -1,5 +1,3 @@
-/* @import "/fonts.css"; */
-
 :root {
   --title-font: "Dela Gothic One", sans-serif;
   --text-font: "Mont", sans-serif;
@@ -8,13 +6,12 @@
   --bg-color: #303941;
   --dark-color: #20252B;
   --dark-gray-color: #252B31;
-  --form-name-color: #9A9A9A;
   --light-text-color: #BDBDBD;
-  --main-yell-color: #EFD445;
+  --main-yell-color: #FFE664;
   --main-red-color: #EB5757;
   --main-green-color: #27AE60;
   --hover-green-color: #6FCF97;
-  --hover-yell-color: #FFE664;
+  --hover-yell-color: #EFD445;
   --transition-duration: 0.3s;
   --gap: 50px;
 }
