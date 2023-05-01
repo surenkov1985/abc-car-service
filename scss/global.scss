@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     font-family: var(--text-font);
     background: var(--dark-gray-color);
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -12,10 +13,11 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .container {
-    width:100%;
+    width: 100%;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -24,10 +26,12 @@ body {
     & svg path {
         transition: all var(--transition-duration);
     }
+
     &:hover svg path {
         fill: var(--hover-yell-color);
     }
 }
+
 .nav-link {
     color: var(--white-color);
     transition: all var(--transition-duration);
@@ -49,11 +53,12 @@ body {
         }
     }
 }
+
 .phone-link {
     color: var(--light-gray-color);
     transition: all var(--transition-duration);
     font-size: 24px;
-    line-height: 135%;  
+    line-height: 135%;
 
     &:hover {
         color: var(--hover-yell-color);
@@ -73,6 +78,7 @@ body {
     cursor: pointer;
     transition: all var(--transition-duration);
     display: block;
+    white-space: nowrap;
 
     &-yell {
         background: var(--main-yell-color);
@@ -82,6 +88,7 @@ body {
             background: var(--hover-yell-color);
         }
     }
+
     &-light {
         background: var(--white-color);
         color: var(--bg-color);
@@ -91,6 +98,7 @@ body {
         }
     }
 }
+
 .sm-btn {
     padding: 10px 21px;
     border-radius: 40px;
@@ -112,7 +120,7 @@ body {
     font-size: 40px;
     line-height: 120%;
     color: var(--light-gray-color);
-    
+
 }
 
 .h3 {
@@ -129,4 +137,61 @@ body {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #3B434A;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FFFFFF;
+}
+
+.swiper-button {
+
+    &-prev,
+    &-next {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background: #3B434A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+        transition: all var(--transition-duration);
+
+        &::after {
+            content: none;
+        }
+
+        &:hover {
+            background: var(--bg-color);
+        }
+    }
+
+    &-next {
+        transform: rotate(-180deg), translateY(50%);
+
+        @media (min-width:1670px) {
+            left: calc(100% + 40px);
+            right: auto;
+        }
+    }
+
+    &-prev {
+        @media (min-width:1670px) {
+            right: calc(100% + 40px);
+            left: auto;
+        }
+    }
 }

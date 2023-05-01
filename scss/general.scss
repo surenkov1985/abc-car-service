@@ -151,6 +151,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: none;
 }
+
 // Фильтр яндекс карт
 [class*="ymaps-2-1"][class*="-ground-pane"] {
     -webkit-filter: grayscale(100%);
@@ -158,17 +159,22 @@ select:-webkit-autofill:focus {
 
 .fixed {
     &__contacts {
+        height: 100%;
         position: fixed;
-        left: 45px;
-        top: 70%;
+        left: 0;
+        top: 0;
         display: flex;
         align-items: center;
-        
+        padding: 0 45px;
+        // background: var(--dark-gray-color);
         flex-direction: column;
+        z-index: 10;
     }
+
     &__addr {
-        position: fixed;
-        left: -4.7%;
+        position: absolute;
+        white-space: nowrap;
+        // left: -4.7%;
         top: 43%;
         transform: rotate(-90deg);
         font-weight: 600;
@@ -178,7 +184,7 @@ select:-webkit-autofill:focus {
         display: flex;
         align-items: center;
         cursor: pointer;
-        
+
         &::after {
             content: '';
             width: 15px;
@@ -191,8 +197,8 @@ select:-webkit-autofill:focus {
     }
 
     &__scls {
-        position: fixed;
-        left: 45px;
+        position: absolute;
+        // left: 45px;
         bottom: 10%;
 
         &_list {
