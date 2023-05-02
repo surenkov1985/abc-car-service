@@ -330,10 +330,6 @@
         margin-top: 80px;
         margin-bottom: 90px;
 
-        &_items {
-            // gap: 60px;
-        }
-
         &_item {
             width: 25%;
             padding-right: 60px;
@@ -677,5 +673,101 @@
                 color: var(--hover-yell-color);
             }
         }
+    }
+}
+
+.reviews {
+    padding: 100px 45px;
+    background: var(--bg-color);
+
+    &__control {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_title {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 12px;
+            align-items: baseline;
+            font-family: var(--title-font);
+            font-size: 30px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: var(--light-gray-color);
+        }
+
+        & .swiper {
+            &-button {
+                &-prev, &-next {
+                    position: absolute;
+                    background: var(--dark-gray-color);
+
+                    &:hover {
+                        background: var(--dark-color);
+                    }
+                }
+
+                &-next {
+                    transform: rotate(180deg) translateY(50%);
+                    right: 0;
+                    left: auto;
+                }
+
+                &-prev {
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+    }
+
+    &__slide {
+        max-width: 630px;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 45px 50px 40px 70px;
+        background: var(--dark-gray-color);
+        color: var(--white-color);
+
+        &_date {
+            &-row {
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        &_content {
+            margin-top: 90px;
+        }
+
+        &_name {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            margin-bottom: 30px;
+        }
+
+        &_text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 135%;
+            color: var(--light-text-color);
+        }
+    }
+
+    &__content {
+        margin-left: 155px;
+    }
+
+    &__navigation {
+        margin-top: auto;
+        position: relative;
     }
 }

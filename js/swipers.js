@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	const servSlider = new Swiper(".services__slider", {
-		// modules: [ Navigation, Pagination ],
 		speed: 900,
 		pagination: {
 			el: ".services__slider .swiper-pagination",
@@ -49,3 +48,12 @@ const prpmoSlider = new Swiper(".promotion__content_slider", {
 		prevEl: ".promotion__content .swiper-button-prev",
 	},
 });
+
+const reviewsSlider = new Swiper(".reviews__slider", {
+	slidesPerView: "auto",
+	spaceBetween: 40,
+	navigation: {
+		nextEl: ".reviews__navigation .swiper-button-next",
+			prevEl: ".reviews__navigation .swiper-button-prev",
+	}
+})
