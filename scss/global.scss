@@ -97,6 +97,16 @@ body {
             background: var(--light-gray-color);
         }
     }
+
+    &-green {
+        padding: 12px 23px;
+        background: var(--main-green-color);
+        border-radius: 28px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 120%;
+        color: var(--white-color);
+    }
 }
 
 .sm-btn {

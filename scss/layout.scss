@@ -155,3 +155,58 @@
         }
     }
 }
+
+.footer {
+    padding: 100px 45px;
+
+    &__menu {
+        &_col {
+            width: 25%;
+        }
+        &_title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 120%;
+            color: var(--white-color);
+            margin-bottom: 32px;
+        }
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 260px;
+        }
+
+        &_item {
+            margin-bottom: 10px;
+            & a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 120%;
+                color: var(--light-text-color);
+                transition: all var(--transition-duration);
+
+                &:hover {
+                    color: var(--hover-yell-color);
+                }
+            }
+            
+        }
+
+        &_more {
+            & a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 120%;
+                color: var(--main-yell-color);
+                transition: all var(--transition-duration);
+
+                &:hover {
+                    color: var(--hover-yell-color);
+                }
+            }
+        }
+        
+    }
+}

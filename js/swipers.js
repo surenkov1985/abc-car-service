@@ -57,3 +57,12 @@ const reviewsSlider = new Swiper(".reviews__slider", {
 			prevEl: ".reviews__navigation .swiper-button-prev",
 	}
 })
+
+const teamSlider = new Swiper(".team__slider", {
+	slidesPerView: "auto",
+	spaceBetween: 40,
+	navigation: {
+		nextEl: ".team__navigation .swiper-button-next",
+			prevEl: ".team__navigation .swiper-button-prev",
+	}
+})
