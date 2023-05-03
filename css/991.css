@@ -1,0 +1,178 @@
+@media (max-width: 991px) {
+  .intro {
+    padding-top: 170px;
+    background-position: 0px !important;
+    background-size: cover !important;
+  }
+  .intro__content {
+    width: 100%;
+  }
+  .intro__subtitle {
+    font-size: 20px;
+  }
+  .intro__subtitle img {
+    width: 34px;
+  }
+  .intro__filter_title {
+    font-size: 20px;
+  }
+  .intro__filter_form {
+    margin-top: 40px;
+  }
+  .h1 {
+    font-size: 48px;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    width: 50px;
+    height: 50px;
+  }
+  .services__top {
+    padding: 90px 45px 250px;
+  }
+  .services__bottom {
+    padding: 250px 45px 90px;
+  }
+  .services__more {
+    font-size: 16px;
+  }
+  .services__more span {
+    width: 34px;
+    height: 34px;
+  }
+  .services__subtitle {
+    margin-top: 80px;
+  }
+  .services__card_ind {
+    font-size: 18px;
+  }
+  .services__card_content {
+    padding: 30px 45px 45px;
+  }
+  .services__card_text {
+    margin-top: 16px;
+  }
+  .services__promo_card-content {
+    padding: 50px 60px;
+  }
+  .services__promo_card-title {
+    font-size: 28px;
+  }
+  .promotion {
+    padding: 110px 45px 50px;
+  }
+  .promotion__title_slider {
+    padding: 10px 0 15px;
+  }
+  .promotion__title_slide {
+    font-size: 36px;
+  }
+  .promotion__card_content {
+    padding: 30px 30px;
+  }
+  .promotion__card_date {
+    padding: 8px 18px;
+  }
+  .promotion__card_desc .h3 {
+    max-width: 100%;
+    margin-bottom: 14px;
+  }
+  .promotion__card_desc p {
+    max-width: 85%;
+  }
+  .recall__img img {
+    display: none;
+    height: 110%;
+    right: 3.2967032967%;
+  }
+  .recall__form {
+    width: 60%;
+    padding: 50px 40px;
+  }
+  .recall__form_title {
+    font-size: 22px;
+  }
+  .reviews {
+    padding: 80px 45px;
+  }
+  .reviews__slide {
+    max-width: 550px;
+  }
+  .reviews__content {
+    margin-left: 110px;
+  }
+  .reviews__card {
+    padding: 35px 30px 40px 50px;
+  }
+  .reviews__card_date-row img {
+    width: 30px;
+  }
+  .reviews__card_content {
+    margin-top: 75px;
+  }
+  .team {
+    padding: 80px 45px;
+  }
+  .team__slide {
+    max-width: 350px;
+  }
+  .team__content {
+    margin-left: 110px;
+  }
+  .team__card {
+    padding-top: 35px;
+  }
+  .team__card_date-row img {
+    width: 30px;
+  }
+  .team__card_content {
+    padding: 0 30px 30px;
+  }
+  .team__card_img {
+    margin-top: -30px;
+  }
+  .questions {
+    padding: 90px 45px 85px;
+  }
+  .questions .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .questions__control {
+    width: 100%;
+  }
+  .questions__title {
+    margin-bottom: 30px;
+  }
+  .questions__subtitle {
+    margin-bottom: 40px;
+  }
+  .questions__content {
+    width: 100%;
+  }
+  .map__contacts {
+    padding: 50px 55px 40px;
+  }
+  .map__contacts_addr-text {
+    font-size: 20px;
+  }
+  .map__contacts_items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .map__contacts_item {
+    width: 100%;
+  }
+  .map__contacts_line {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}

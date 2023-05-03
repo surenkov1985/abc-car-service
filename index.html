@@ -41,7 +41,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__logo false">
+            <div class="header__logo">
                 <a href="/" class="logo link">
                     <svg width="124" height="33" viewBox="0 0 124 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class="container">
-                <div class="header__logo">
+                <!-- <div class="header__logo">
                     <a href="/" class="logo link">
                         <svg width="124" height="33" viewBox="0 0 124 33" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
                                 fill="#EFD445" />
                         </svg>
                     </a>
-                </div>
+                </div> -->
                 <nav class="header__nav">
                     <ul class="header__nav_list">
                         <li class="header__nav_item">
@@ -111,6 +111,11 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__phone-icon">
+                    <a href="tel:+74852670070" class="phone-link"><svg width="26" height="26" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.87221 1.55265C4.19559 1.55265 4.52311 1.55265 4.84648 1.55265C5.07865 1.55265 5.21961 1.66044 5.29009 1.88017C5.78759 3.38097 6.28923 4.88176 6.78673 6.38255C6.87794 6.65203 6.82819 6.7847 6.58773 6.94639C5.96171 7.36512 5.33569 7.7797 4.70967 8.19843C4.378 8.41816 4.33654 8.54253 4.48579 8.90737C5.46421 11.3078 6.98159 13.3227 8.92184 15.0225C10.2402 16.1792 11.7037 17.1078 13.333 17.767C13.7269 17.9246 13.8305 17.8914 14.071 17.5349C14.4773 16.9254 14.8835 16.316 15.2898 15.7065C15.4847 15.4205 15.5966 15.379 15.9159 15.4868C17.3959 15.9802 18.876 16.4735 20.3561 16.9669C20.5343 17.0249 20.6877 17.1203 20.6877 17.3193C20.6836 18.0904 20.7375 18.874 20.6297 19.6368C20.4141 21.1625 19.0667 22.2694 17.5203 22.2653C13.5071 22.2487 9.89611 21.0298 6.73698 18.5547C3.47836 15.9885 1.38056 12.6676 0.435313 8.62545C0.136813 7.35682 0 6.06747 0 4.76153C0 3.01613 1.31838 1.63971 3.06377 1.5568C3.33325 1.54436 3.60273 1.5568 3.87221 1.5568V1.55265Z" fill="#FFFFFF"/>
+                    </svg></a>
+                </div>
                 <div class="header__phone">
                     <a href="tel:+74852670070" class="phone-link">+7 4852 670-070</a>
                 </div>
@@ -131,9 +136,19 @@
 
                     </form>
                 </div>
-                <button class="header__recall recall-btn btn btn-yell">Оставить заявку</button>
+                <!-- <button class="header__recall recall-btn btn btn-yell">Оставить заявку</button> -->
             </div>
-            <button class="header__recall recall-btn btn btn-yell false">Оставить заявку</button>
+            <button class="burger-menu">
+                <span>
+                    <svg width="40" height="50" viewBox="0 0 22 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="22" height="2" fill="white" />
+                        <rect y="6" width="22" height="2" fill="white" />
+                        <rect y="12" width="22" height="2" fill="white" />
+                    </svg>
+                </span>
+            </button>
+            <button class="header__recall recall-btn btn btn-yell">Оставить заявку</button>
         </header>
         <main class="main">
             <section class="intro"
@@ -201,8 +216,9 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="services__cards">
-                            <div class="services__card">
+                        <div class="services__cards swiper">
+                            <div class="swiper-wrapper">
+                                <div class="services__card swiper-slide">
                                 <a href="/service.html" class="services__card_link">
                                     <img src="img/tech-serv.png" alt="" class="services__card_img">
                                     <div class="services__card_content">
@@ -215,7 +231,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="services__card">
+                            <div class="services__card swiper-slide">
                                 <a href="/service.html" class="services__card_link">
                                     <img src="img/car-repair.png" alt="" class="services__card_img">
                                     <div class="services__card_content">
@@ -227,7 +243,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="services__card">
+                            <div class="services__card swiper-slide">
                                 <a href="/service.html" class="services__card_link">
                                     <img src="img/diagnos.png" alt="" class="services__card_img">
                                     <div class="services__card_content">
@@ -241,7 +257,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="services__card">
+                            <div class="services__card swiper-slide">
                                 <a href="/service.html" class="services__card_link">
                                     <img src="img/tuning.png" alt="" class="services__card_img">
                                     <div class="services__card_content">
@@ -255,6 +271,8 @@
                                     </div>
                                 </a>
                             </div>
+                            </div>
+                            
                             <div class="services__logo">
                                 <a href="/" class="logo link">
                                     <svg width="124" height="33" viewBox="0 0 124 33" fill="none"
@@ -316,8 +334,8 @@
                 </div>
                 <div class="services__bottom">
                     <div class="container">
-                        <div class="services__promo_card">
-                            <img src="img/promo.png" alt="">
+                        <div class="services__promo_card" style="background: url(img/promo.png);">
+                            <!-- <img src="img/promo.png" alt=""> -->
 
                             <div class="services__promo_card-content">
                                 <div class="services__promo_card-title h2">
@@ -621,7 +639,7 @@
                 <div class="container flex">
                     <div class="reviews__control">
                         <div class="reviews__control_title">
-                            <h3 class="h3">Отзывы<br> о нас</h3>
+                            <h3 class="h3">Отзывы о нас</h3>
 
                             <img src="img/icons/like.svg" alt="revievs-like">
                         </div>
@@ -732,7 +750,7 @@
                 <div class="container flex">
                     <div class="team__control">
                         <div class="team__title">
-                            <h3 class="h3">Наша<br> команда</h3>
+                            <h3 class="h3">Наша команда</h3>
                         </div>
                         <div class="team__navigation flex">
                             <div class="swiper-button-prev">
@@ -755,11 +773,11 @@
                                             <div class="team__card_stars flex">
                                                 <div class="team__card_practice flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    12 лет<br> стажа
+                                                    12 лет стажа
                                                 </div>
                                                 <div class="team__card_sert flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    Сертифицированный<br> специалист
+                                                    Сертифицированный специалист
                                                 </div>
                                             </div>
                                         </div>
@@ -774,11 +792,11 @@
                                             <div class="team__card_stars flex">
                                                 <div class="team__card_practice flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    12 лет<br> стажа
+                                                    12 лет стажа
                                                 </div>
                                                 <div class="team__card_sert flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    Сертифицированный<br> специалист
+                                                    Сертифицированный специалист
                                                 </div>
                                             </div>
                                         </div>
@@ -793,11 +811,11 @@
                                             <div class="team__card_stars flex">
                                                 <div class="team__card_practice flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    12 лет<br> стажа
+                                                    12 лет стажа
                                                 </div>
                                                 <div class="team__card_sert flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    Сертифицированный<br> специалист
+                                                    Сертифицированный специалист
                                                 </div>
                                             </div>
                                         </div>
@@ -812,11 +830,11 @@
                                             <div class="team__card_stars flex">
                                                 <div class="team__card_practice flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    12 лет<br> стажа
+                                                    12 лет стажа
                                                 </div>
                                                 <div class="team__card_sert flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    Сертифицированный<br> специалист
+                                                    Сертифицированный специалист
                                                 </div>
                                             </div>
                                         </div>
@@ -831,11 +849,11 @@
                                             <div class="team__card_stars flex">
                                                 <div class="team__card_practice flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    12 лет<br> стажа
+                                                    12 лет стажа
                                                 </div>
                                                 <div class="team__card_sert flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    Сертифицированный<br> специалист
+                                                    Сертифицированный специалист
                                                 </div>
                                             </div>
                                         </div>
@@ -850,11 +868,11 @@
                                             <div class="team__card_stars flex">
                                                 <div class="team__card_practice flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    12 лет<br> стажа
+                                                    12 лет стажа
                                                 </div>
                                                 <div class="team__card_sert flex">
                                                     <img src="img/icons/star.svg" alt="">
-                                                    Сертифицированный<br> специалист
+                                                    Сертифицированный специалист
                                                 </div>
                                             </div>
                                         </div>
@@ -1029,8 +1047,9 @@
                 </div>
             </section>
 
-            <section class="map" id="map" data-coord="[57.675619, 39.795116]" data-center="[57.675619, 39.795116]"
-                data-zoom="15" data-title="Ярославль, ул. Елены Колесовой 19а">
+            <section class="section_map">
+                <div class="map" id="map" data-coord="[57.675619, 39.795116]" data-center="[57.675619, 39.795116]"
+                data-zoom="15" data-title="Ярославль, ул. Елены Колесовой 19а"></div>
                 <div class="container">
                     <div class="map__contacts">
                         <div class="map__contacts_title">

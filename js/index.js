@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function(){
     $(document).on("blur", ".header__search_form .search-input", function(e) {
         $(".header__search_form").removeClass("active");
     });
+	$(document).on("click", function(e){
+		if ($(".header__search_form").hasClass("active") && !e.target.closest(".header__search_form")) {
+			$(".header__search_form").removeClass("active");
+		}
+	})
     $('.questions__point_label input').each((_,input) => {
         const point = $(input).closest('.questions__point');
         $(point).removeClass('active')

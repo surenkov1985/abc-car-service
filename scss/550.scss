@@ -1,3 +1,379 @@
 @media (max-width:550px) {
+    .header {
+        padding: 20px 20px;
+
+        &__logo {
+            & svg {
+                width: 80px;
+            }
+        }
+
+        &__phone-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        &__search {
+            display: none;
+        }
+
+        & .burger-menu svg {
+            width: 30px;
+        }
+    }
+    .h1 {
+        font-size: 30px;
+    }
+
+    .h2 {
+        font-size: 22px;
+    }
+
+    .sm-btn {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+    .intro {
+        padding: 150px 20px 50px;
+
+        &__subtitle {
+            font-size: 16px;
+            & img {
+                width: 26px;
+            }
+        }
+        &__filter {
+
+            &_title {
+                font-size: 16px;
+                flex-wrap: wrap;
+            }
+            &_form {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+
+                & .col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .services {
+
+        &__top {
+            padding: 40px 20px 180px;
+        }
+
+        &__bottom {
+            padding: 180px 20px 40px;
+        }
+        &__promo{
+            &_card{
+                width: calc(100% - 40px);
+            &-content {
+            padding: 20px 30px;
+
+            
+            }
+            &-title {
+                font-size: 22px;
+            }
+
+            }
+        }
+
+        &__more {
+            display: none;
+            // font-size: 15px;
+            // gap: 10px;
+
+            // & span {
+                
+            //     width: 26px;
+            //     height: 26px;
+
+            //     & svg {
+            //         width: 10px;
+            //         height: 10px;
+            //     }
+            // }
+        }
+
+        &__items {
+            margin-top: 30px;
+            gap: 12px 10px;
+        }
+
+        &__cards {
+            margin-top: 40px;
+        }
+
+        &__card {
+            &_content {
+                padding: 20px;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 40px;
+        }
+
+        &__advantages {
+            margin-top: 0px;
+            margin-bottom: 40px;
+
+            &_item {
+                padding: 0px 5px;
+                align-items: center;
+                &-title {
+                    margin-top: 16px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                &-text {
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .promotion {
+        padding: 60px 20px 40px;
+        &__title {
+            &_slider {
+                padding: 8px 0 10px;
+            }
+
+            &_slide {
+                font-size: 18px;
+            }
+        }
+
+        & .services__more {
+            display: flex;
+        }
+    }
+    .recall {
+        padding: 60px 20px 50px;
+
+        &__img {
+            & img {
+                display: none;
+            }
+        }
+
+        &__form {
+            padding: 40px 20px;
+            width: 100%;
+
+            &_title {
+                font-size: 20px;
+            }
+
+            &_subtitle {
+                margin-top: 16px;
+            }
+            &_control {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+
+            }
+
+            &_label {
+                margin-top: 20px;
+                padding: 15px 0;
+                width: 100%;
+                display: flex;
+                margin-right: 0;
+            }
+
+            &_submit {
+                width: 100%;
+            }
+        }
+    }
+
+    .reviews {
+        padding: 50px 20px;
+
+        & .container {
+            gap: 30px;
+        }
+
+        &__control {
+
+            & img {
+                width: 25px;
+            }
+        }
+
+        &__slide {
+            max-width: 550px;
+        }
+
+        &__card {
+            padding: 30px 20px;
+
+            &_date-row {
+                & img {
+                    width: 25px;
+                }
+            }
+
+            &_name {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            &_text {
+                font-size: 14px;
+                line-height: 120%;
+            }
+
+            &_content {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .team {
+        padding: 60px 20px;
+
+        & .container {
+            flex-direction: column;
+            gap: 30px   ;
+        }
+
+        &__card {
+            padding-top:20px;
+
+            &_name {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            &_role {
+                margin-bottom: 15px;
+            }
+
+            &_stars {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                font-size: 14px;
+            }
+
+
+            &_content {
+                padding: 0 20px 25px;
+            }
+
+            &_img {
+                margin-top: -20px;
+            }
+        }
+    }
+
+    .questions {
+        padding: 60px 20px;
+
+        & .container {
+            gap: 40px;
+        }
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__subtitle {
+            margin-bottom: 25px;
+        }
+
+        &__content {
+            &_points{
+                gap: 25px;
+            }
+        }
+
+        &__point {
+            padding: 25px 20px;
+
+            &_title {
+                font-size: 18px;
+            }
+
+            &_text {
+                gap: 20px;
+
+                &>div {
+                    display: none;
+                }
+            }
+
+            &.active {
+                & .questions__point_text {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .h1 {
+        font-size: 26px;
+    }
+
+    .intro {
+        padding: 140px 20px 50px;
+
+        &__subtitle {
+            & img {
+                display: none;
+            }
+        }
+        &__filter {
+
+            &_title {
+                font-size: 16px;
+            }
+            &_form {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+
+                & .col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .promotion {
+        &__card {
+            &_content {
+                padding: 20px 20px;
+            }
+
+            &_desc {
+                & .h3 {
+                    max-width: 100%;
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                }
+
+                & p {
+                    max-width: 100%;
+                    font-size: 14px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+
     
 }

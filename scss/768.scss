@@ -1,3 +1,369 @@
 @media (max-width: 768px) {
     
+    .logo {
+            
+        & svg {
+            width: 100px;
+            
+        }
+    }
+
+    .header {
+        padding: 25px 30px;
+
+        &__phone {
+            display: none;
+
+            &-icon {
+                display: block;
+                margin-left: auto;
+            }
+        }
+
+        &__search {
+
+            &_btn {
+                width: 45px;
+                height: 45px;
+
+                & svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        &__recall {
+            display: none;
+        }
+
+        & .burger-menu {
+            margin-right: 0;
+
+            & svg {
+            width: 35px;
+        }
+        }
+    }
+    .h1 {
+        font-size: 40px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .sm-btn {
+        padding: 8px 20px;
+    }
+
+    .intro {
+        padding: 150px 30px 60px;
+
+        &__subtitle {
+            font-size: 18px;
+
+            & img {
+                width: 30px;
+            }
+        }
+
+        &__filter {
+
+            &_title {
+                font-size: 18px;
+            }
+
+            &_form {
+                margin-top: 35px;
+            }
+        }
+
+        &__scroll {
+            display: none;
+        }
+    }
+
+    .services {
+
+        &__top {
+            padding: 90px 30px 210px
+        }
+        &__bottom {
+            padding: 210px 30px 40px;
+        }
+
+        &__more {
+            & span {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 60px;
+        }
+
+        &__items {
+            margin-top: 40px;
+        }
+
+        &__cards {
+            margin-top: 55px;
+                
+                & .swiper-wrapper {
+                    
+                display: flex;
+                grid-gap: 0;
+                // grid-template-columns: repeat(2, 1fr);
+                // grid-gap: 40px;
+                // position: relative;
+                }
+                
+            
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__card {
+            height: auto;
+            &_ind {
+                font-size: 16px;
+            }
+
+            & .h3 {
+                font-size: 18px;
+            }
+
+            &_content {
+                padding: 30px;
+            }
+            &_text {
+                margin-top: 16px;
+            }
+
+            &:first-child {
+                border-radius: 10px;
+            }
+    
+            &:nth-child(2) {
+                border-radius: 10px;
+            }
+    
+            &:nth-child(3) {
+                border-radius: 10px;
+            }
+    
+            &:nth-child(4) {
+                border-radius: 10px;
+            }
+        }
+        
+        &__promo{
+            
+
+            &-l-image,
+            &-s-image {
+                display: none;
+            }
+            &_card{
+                width: calc(100% - 60px);
+            &-content {
+            padding: 40px 50px;
+
+            
+            }
+            &-title {
+                font-size: 26px;
+            }
+
+            }
+        }
+
+        &__advantages {
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            &_item {
+                width: 50%;
+            }
+        }
+    }
+
+    .swiper {
+        overflow: visible;
+    }
+
+    .swiper-button {
+
+        &-prev,
+        &-next {
+            display: none!important;
+        }
+    }
+
+    .promotion {
+        padding: 80px 30px 50px;
+        &__title {
+            &_slider {
+                padding: 8px 0 10px;
+            }
+
+            &_slide {
+                font-size: 26px;
+            }
+        }
+
+        &__card {
+            &_content {
+                padding: 30px 20px;
+            }
+
+            &_date {
+                padding: 8px 14px;
+                font-size: 14px;
+            }
+
+            &_desc {
+                & .h3 {
+                    max-width: 100%;
+                    margin-bottom: 14px;
+                }
+
+                & p {
+                    max-width: 85%;
+                }
+            }
+        }
+    }
+
+    .recall {
+        padding: 90px 30px 80px;
+
+        &__img {
+            width: 0;
+            & img {
+                display: none;
+            }
+        }
+
+        &__form {
+            width: 100%;
+
+            &_label {
+                width: 46%;
+                display: inline-flex;
+                    margin-right: 2%;
+            
+            }
+
+            &_control {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .reviews {
+        padding: 70px 30px;
+
+        & .container {
+            flex-direction: column;
+            gap: 40px   ;
+        }
+
+        &__control {
+            width: 100%;
+
+            & img {
+                width: 25px;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &__slide {
+            max-width: 550px;
+        }
+
+        &__card {
+            padding: 30px;
+
+            &_date-row {
+                & img {
+                    width: 28px;
+                }
+            }
+
+            &_name {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            &_content {
+                margin-top: 60px;
+            }
+        }
+    }
+
+    .team {
+        padding: 70px 30px;
+
+        & .container {
+            flex-direction: column;
+            gap: 40px   ;
+        }
+
+        &__control {
+            width: 100%;
+        }
+
+        &__content {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &__card {
+            padding-top:20px;
+
+            &_name {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            &_content {
+                padding: 0 25px 30px;
+            }
+
+            &_img {
+                margin-top: -20px;
+            }
+        }
+    }
+
+    .questions {
+        padding: 70px 30px;
+
+        &__point {
+            padding: 30px;
+
+            &_text {
+                gap: 30px;
+            }
+
+            &.active {
+                & .questions__point_text {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 }

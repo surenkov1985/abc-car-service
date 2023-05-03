@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    min-width: 320px;
+    min-width: 340px;
     height: 100%;
     min-height: 100vh;
     font-family: var(--text-font);
@@ -52,6 +52,14 @@ body {
             fill: var(--hover-yell-color);
         }
     }
+
+    @media (max-width: 1500px) {
+        font-size: 16px;
+    }
+}
+
+a[href*="tel"] {
+    white-space: nowrap;
 }
 
 .phone-link {
@@ -66,6 +74,10 @@ body {
         & svg rect {
             fill: var(--hover-yell-color);
         }
+    }
+
+    @media (max-width: 1500px) {
+        font-size: 22px;
     }
 }
 
@@ -205,3 +217,4 @@ body {
         }
     }
 }
+

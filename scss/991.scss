@@ -1,3 +1,264 @@
 @media (max-width:991px) {
-    
+    .intro {
+        padding-top: 170px;
+        background-position: 0px!important;
+        background-size: cover!important;
+
+        &__content {
+            width: 100%;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+
+            & img {
+                width: 34px;
+            }
+        }
+
+        &__filter {
+
+            &_title {
+                font-size: 20px;
+            }
+
+            &_form {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .h1 {
+        font-size: 48px;
+    }
+
+    .h2 {
+        font-size: 30px;
+    }
+
+    .h3 {
+        font-size: 20px;
+    }
+
+    .swiper-button {
+
+        &-prev,
+        &-next {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .services {
+
+        &__top {
+            padding: 90px 45px 250px
+        }
+
+        &__bottom {
+            padding: 250px 45px 90px;
+        }
+
+        &__more {
+            font-size: 16px;
+
+            & span {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 80px;
+        }
+
+        &__card {
+
+            &_ind {
+                font-size: 18px;
+            }
+
+            &_content {
+                padding: 30px 45px 45px;
+            }
+
+            
+            &_text {
+                margin-top: 16px;
+            }
+        }
+
+        &__promo_card{
+            &-content {
+            padding: 50px 60px;
+
+            
+            }
+            &-title {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .promotion {
+        padding: 110px 45px 50px;
+        &__title {
+            &_slider {
+                padding: 10px 0 15px;
+            }
+
+            &_slide {
+                font-size: 36px;
+            }
+        }
+
+        &__card {
+            &_content {
+                padding: 30px 30px;
+            }
+
+            &_date {
+                padding: 8px 18px;
+            }
+
+            &_desc {
+                & .h3 {
+                    max-width: 100%;
+                    margin-bottom: 14px;
+                }
+
+                & p {
+                    max-width: 85%;
+                }
+            }
+        }
+    }
+
+    .recall {
+        &__img {
+            & img {
+                display: none;
+                height: 110%;
+                // width: 64%;
+                right: calc(30 / 910 * 100%);
+            }
+        }
+
+        &__form {
+            width: 60%;
+            padding: 50px 40px;
+
+            &_title {
+                font-size: 22px;
+            }
+
+            &_label {
+                // width: 48%;
+            }
+        }
+    }
+
+    .reviews {
+        padding: 80px 45px;
+
+        &__slide {
+            max-width: 550px;
+        }
+
+        &__content {
+            margin-left: 110px;
+        }
+
+        &__card {
+            padding: 35px 30px 40px 50px;
+
+            &_date-row {
+                & img {
+                    width: 30px;
+                }
+            }
+
+            &_content {
+                margin-top: 75px;
+            }
+        }
+    }
+
+    .team {
+        padding: 80px 45px;
+
+        &__slide {
+            max-width: 350px;
+        }
+
+        &__content {
+            margin-left: 110px;
+        }
+
+        &__card {
+            padding-top: 35px;
+
+            &_date-row {
+                & img {
+                    width: 30px;
+                }
+            }
+
+            &_content {
+                padding: 0 30px 30px;
+            }
+
+            &_img {
+                margin-top: -30px;
+            }
+        }
+    }
+
+    .questions {
+        padding: 90px 45px 85px;
+
+        & .container {
+            flex-direction: column-reverse;
+        }
+
+        &__control {
+            width: 100%;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            width: 100%;
+        }
+    }
+
+    .map {
+        &__contacts {
+            padding: 50px 55px 40px;
+
+            &_addr-text {
+                font-size: 20px;
+            }
+
+            &_items {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            &_item {
+                width: 100%;
+            }
+
+            &_line {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
 }

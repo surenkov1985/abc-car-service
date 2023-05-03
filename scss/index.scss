@@ -1,12 +1,16 @@
 .intro {
     width: 100%;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     mix-blend-mode: color-dodge;
     background-position: 500px !important;
     background-repeat: no-repeat !important;
     padding: 233px 45px 75px;
     position: relative;
+
+    @media (max-height:800px) {
+        padding: 150px 45px 60px;
+    }
 
     & .container {
         margin: 0 auto;
@@ -15,7 +19,7 @@
     }
 
     &__content {
-        width: 50%;
+        width: 55%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -40,7 +44,7 @@
     &__filter {
         &_form {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             gap: 78px;
             margin-top: 55px;
         }
@@ -185,10 +189,15 @@
 
     &__cards {
         margin-top: 68px;
+
+        & .swiper-wrapper {
+            
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
         position: relative;
+        }
+        
     }
 
     &__card {
@@ -283,14 +292,19 @@
 
     &__promo {
         &_card {
+            max-width: 1300px;
+            width: calc(100% - 90px);
             position: absolute;
             top: 0;
             transform: translateY(-50%);
+            background-repeat: no-repeat!important;
+            background-size: cover!important;
+            background-position: right!important;
 
             &-content {
                 width: 100%;
                 height: 100%;
-                position: absolute;
+                // position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 2;
@@ -318,10 +332,12 @@
         }
 
         &-l-image {
+            width: 32%;
             right: calc(114 / 1300 * 100%);
         }
 
         &-s-image {
+            width: 17%;
             right: calc(215 / 1300 * 100%);
         }
     }
@@ -330,9 +346,17 @@
         margin-top: 80px;
         margin-bottom: 90px;
 
+        &_items {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
         &_item {
             width: 25%;
             padding-right: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
             &-title {
                 margin-top: 25px;
@@ -377,14 +401,10 @@
 
                 &-prev,
                 &-next {
-                    width: 66px;
-                    height: 66px;
-                    border-radius: 50%;
                     background: #3B434A;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    transform: translateY(-50%);
                     transition: all var(--transition-duration);
 
                     &::after {
@@ -415,6 +435,15 @@
         }
 
 
+    }
+
+    &__slide {
+        height: auto;
+        min-height: 180px;
+
+        & img {
+            width: 100%;height: 100%;object-fit: cover;
+        }
     }
 }
 
@@ -462,9 +491,6 @@
 
             &-prev,
             &-next {
-                width: 66px;
-                height: 66px;
-                border-radius: 50%;
                 background: var(--dark-gray-color);
                 display: flex;
                 align-items: center;
@@ -578,7 +604,7 @@
         top: 0;
         background-position: bottom right !important;
         background-repeat: no-repeat !important;
-        // background-size: cover !important;
+        background-size: cover !important;
 
         & img {
             position: absolute;
@@ -969,7 +995,7 @@
     }
 }
 
-.map {
+.section_map {
     position: relative;
     height: 670px;
     display: flex;
@@ -982,7 +1008,16 @@
         align-items: center;
         justify-content: flex-start;
         height: 100%;
+        z-index: 1;
     }
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    
 
     &__contacts {
         padding: 75px 80px 50px 75px;
