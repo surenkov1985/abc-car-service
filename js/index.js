@@ -31,6 +31,16 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     })
 
+	$(document).on("click", ".header__nav_item span", function(){
+		$("body").addClass("hidden");
+		$(".popup").addClass("show");
+	})
+
+	$(document).on("click", ".popup_close", function(){
+		$("body").removeClass("hidden");
+		$(".popup").removeClass("show");
+	})
+
     loadScript(window.location.protocol + '//api-maps.yandex.ru/2.1/?lang=ru_RU', setMap);
 });
 

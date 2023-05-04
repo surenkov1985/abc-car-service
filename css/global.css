@@ -7,6 +7,9 @@ body {
   background: var(--dark-gray-color);
   overflow-x: hidden;
 }
+body.hidden {
+  overflow: hidden;
+}
 
 .wrapper {
   width: 100%;

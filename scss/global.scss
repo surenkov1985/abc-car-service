@@ -6,6 +6,10 @@ body {
     font-family: var(--text-font);
     background: var(--dark-gray-color);
     overflow-x: hidden;
+
+    &.hidden {
+        overflow: hidden;
+    }
 }
 
 .wrapper {
