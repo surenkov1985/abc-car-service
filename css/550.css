@@ -249,6 +249,79 @@
   .questions__point.active .questions__point_text {
     margin-top: 20px;
   }
+  .map {
+    height: 350px;
+  }
+  .map__contacts {
+    padding: 30px 20px;
+  }
+  .map__contacts_title {
+    margin-bottom: 20px;
+  }
+  .map__contacts_addr-text {
+    font-size: 16px;
+  }
+  .map__contacts_items {
+    margin-top: 20px;
+  }
+  .map__contacts_line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .map__contacts_link {
+    font-size: 18px;
+  }
+  .map__contacts_mode-item {
+    font-size: 18px;
+  }
+  .feedback {
+    padding: 30px 20px;
+  }
+  .feedback .container {
+    gap: 20px;
+  }
+  .feedback__scls_list {
+    gap: 15px;
+  }
+  .feedback__scls_item {
+    width: 45px;
+    height: 45px;
+  }
+  .feedback__recall {
+    margin-left: auto;
+  }
+  .footer {
+    padding: 50px 20px;
+  }
+  .footer__menu {
+    row-gap: 25px;
+  }
+  .footer__menu_title {
+    margin-bottom: 20px;
+  }
+  .footer__menu_col {
+    width: 100%;
+  }
+  .copyrait {
+    padding: 25px 20px 25px;
+  }
+  .copyrait .container {
+    gap: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .copyrait__icon svg {
+    width: 18px;
+  }
+  .copyrait__text {
+    width: 100%;
+    gap: 20px;
+  }
+  .copyrait__links {
+    width: 100%;
+  }
 }
 @media (max-width: 420px) {
   .h1 {
