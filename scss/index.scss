@@ -127,6 +127,30 @@
             align-items: center;
             gap: 10px;
             cursor: pointer;
+            transition: all var(--transition-duration);
+        }
+
+        @media (max-height: 700px) {
+            display: none;
+        }
+
+        & svg, &svg path {
+            transition: all var(--transition-duration);
+        }
+
+        &:hover {
+
+            & svg:last-child {
+                margin-bottom: -5px;
+            }
+            & svg:first-child {
+                margin-bottom: 5px;
+            }
+            & svg path {
+                fill: var(--hover-yell-color)
+            }
+
+
         }
     }
 }

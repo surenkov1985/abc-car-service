@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     })
 
+	$(document).on("click", ".intro__scroll_btn", function(e){
+		window.scrollTo( {
+			top : window.innerHeight,
+			behavior: "smooth"
+		})
+	})
+
     $('.questions__point_label input').on('change', function() {
         $('.questions__point_label input').each((_,input) => {
             const point = $(input).closest('.questions__point');
@@ -36,12 +43,81 @@ document.addEventListener("DOMContentLoaded", function(){
 		$(".popup").addClass("show");
 	})
 
-	$(document).on("click", ".popup_close", function(){
-		$("body").removeClass("hidden");
+	$(document).on("click", ".popup", function(e){
+		if (e.target.classList.contains("popup") || e.target.classList.contains("popup_close")) {
+			$("body").removeClass("hidden");
 		$(".popup").removeClass("show");
+		}
+
+		if (e.target.classList.contains("popup__more-btn")) {
+			const menuItem = e.target.closest(".popup__menu_item")
+
+			$(".popup__menu_item").each((_, item) => {
+				$(item).removeClass("active");
+
+				
+			})
+
+			
+				$(menuItem).addClass("active");
+			
+
+		}
+		
 	})
 
+	$(document).on("click", ".burger-menu", function(){
+		$("body").addClass("hidden");
+		$(".mobile").addClass("show");
+	})
+
+	$(document).on("click", ".mobile", function(e){
+		if (e.target.classList.contains("mobile") || e.target.classList.contains("mobile_close")) {
+			$("body").removeClass("hidden");
+			$(".mobile").removeClass("show");
+			$(".mobile__menu_item").each((_, item) => {
+				$(item).removeClass("active");
+			})
+		}
+
+		if (e.target.classList.contains("mobile__more-btn")) {
+			const menuItem = e.target.closest(".mobile__menu_item")
+
+			$(".mobile__menu_item").each((_, item) => {
+				$(item).removeClass("active");
+			})
+			$(menuItem).addClass("active");
+		}
+
+		if (e.target.classList.contains("mobile__menu_sublist-close")) {
+			// const menuItem = e.target.closest(".mobile__menu_item")
+
+			$(".mobile__menu_item").each((_, item) => {
+				$(item).removeClass("active");
+			})
+			// $(menuItem).addClass("active");
+		}
+	});
+
     loadScript(window.location.protocol + '//api-maps.yandex.ru/2.1/?lang=ru_RU', setMap);
+
+	//  observer
+	const scrollOptions = {
+	    rootMargin: '0px',
+	    threshold: 1
+	}
+
+    const scrollCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.boundingClientRect.y < 0) {
+            document.querySelector('.header.fixed').classList.add('show');
+		} else {
+            document.querySelector('.header.fixed').classList.remove('show');
+        }
+      })
+    }
+    const scrollObserver = new IntersectionObserver(scrollCallback, scrollOptions);
+    scrollObserver.observe(document.querySelector('.obs-target'));
 });
 
 function setMap() {

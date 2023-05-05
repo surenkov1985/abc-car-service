@@ -6,6 +6,7 @@ body {
   font-family: var(--text-font);
   background: var(--dark-gray-color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body.hidden {
   overflow: hidden;
