@@ -97,6 +97,24 @@ document.addEventListener("DOMContentLoaded", function(){
 			})
 			// $(menuItem).addClass("active");
 		}
+
+		if (e.target.classList.contains("mobile__subitem_more-btn")) {
+			const menuItem = e.target.closest(".mobile__menu_subitem");
+
+			$(".mobile__menu_subitem").each((_, item) => {
+				$(item).removeClass("active");
+			});
+			$(menuItem).addClass("active");
+		}
+
+		if (e.target.classList.contains("mobile__submenu-close")) {
+			// const menuItem = e.target.closest(".mobile__menu_item")
+
+			$(".mobile__menu_subitem").each((_, item) => {
+				$(item).removeClass("active");
+			});
+			// $(menuItem).addClass("active");
+		}
 	});
 
     loadScript(window.location.protocol + '//api-maps.yandex.ru/2.1/?lang=ru_RU', setMap);
