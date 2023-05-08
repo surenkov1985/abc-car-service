@@ -909,12 +909,15 @@
         }
 
         &.brands {
-            & .popup__submenu{
-                &_cards, &_brands {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 10px;
-            }}
+            & .popup__submenu {
+
+                &_cards,
+                &_brands {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 10px;
+                }
+            }
         }
 
     }
@@ -1060,4 +1063,82 @@
         }
 
     }
+}
+
+.modal {
+    display: none;
+
+    &__img {
+        width: calc(620 / 1230 * 100%);
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    &__content {
+        width: 95%;
+        max-width: 1230px;
+        position: relative;
+
+        &.fancybox__content {
+            padding: 0;
+
+            &>.is-close {
+                top: 35px;
+                right: 40px;
+                width: 60px;
+                height: 60px;
+                border-radius: 0;
+                background: var(--dark-gray-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all var(--transition-duration);
+
+                & svg path {
+                    stroke: var(--light-text-color);
+                    transition: all var(--transition-duration);
+                }
+
+                &:hover {
+                    background: var(--dark-color);
+
+                    & svg path {
+                        stroke: var(--hover-yell-color);
+                    }
+                }
+            }
+        }
+
+        & .form {
+
+            &_content {
+                padding: 70px 50px;
+            }
+
+        }
+
+
+    }
+
+    &__form {
+        width: 51%;
+        background: var(--bg-color);
+        padding: 88px 40px;
+        margin-left: auto;
+
+        &>.form {
+
+            &_content {
+                padding: 70px 50px;
+            }
+
+        }
+    }
+
+
 }

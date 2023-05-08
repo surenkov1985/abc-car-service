@@ -132,7 +132,8 @@
                     </svg>
                 </span>
             </button>
-            <button class="header__recall recall-btn btn btn-yell">Оставить заявку</button>
+            <button class="header__recall recall-btn btn btn-yell" data-fancybox data-src="#recall">Оставить
+                заявку</button>
         </header>
         <header class="header">
             <div class="header__logo">
@@ -225,7 +226,8 @@
                     </svg>
                 </span>
             </button>
-            <button class="header__recall recall-btn btn btn-yell">Оставить заявку</button>
+            <button class="header__recall recall-btn btn btn-yell" data-fancybox data-src="#recall">Оставить
+                заявку</button>
         </header>
         <main class="main">
             <section class="intro"
@@ -257,15 +259,108 @@
                             <div class="intro__filter_title">
                                 <p>Выберите <a href="services.html">услугу</a> или ваш </p><button>автомобиль</button>
                             </div>
-                            <form class="intro__filter_form">
+                            <form action="brand.html" class="intro__filter_form">
                                 <div class="col">
                                     <p class="intro__filter_name">Марка</p>
                                     <div class="intro__filter_form-select">
-                                        <button class="intro__filter_select"><span>Skoda</span> <svg width="10"
-                                                height="7" viewBox="0 0 10 7" fill="none"
+                                        <button class="intro__filter_select"><span>Skoda</span>
+                                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" />
-                                            </svg></button>
+                                            </svg>
+                                        </button>
+                                        <div class="intro__filter_list">
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Kia">
+                                                <span href="" class="popup__submenu_link">Kia</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Citroen">
+                                                <span href="" class="popup__submenu_link">Citroen</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Skoda" checked>
+                                                <span href="" class="popup__submenu_link">Skoda</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Ford">
+                                                <span href="" class="popup__submenu_link">Ford</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Volvo">
+                                                <span href="" class="popup__submenu_link">Volvo</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Peugeot">
+                                                <span href="" class="popup__submenu_link">Peugeot</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Opel">
+                                                <span href="" class="popup__submenu_link">Opel</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Chevrolet">
+                                                <span href="" class="popup__submenu_link">Chevrolet</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Kia">
+                                                <span href="" class="popup__submenu_link">Kia</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Citroen">
+                                                <span href="" class="popup__submenu_link">Citroen</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Skoda">
+                                                <span href="" class="popup__submenu_link">Skoda</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Ford">
+                                                <span href="" class="popup__submenu_link">Ford</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Volvo">
+                                                <span href="" class="popup__submenu_link">Volvo</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Peugeot">
+                                                <span href="" class="popup__submenu_link">Peugeot</span>
+
+                                            </label>
+                                            <label class="intro__filter_item">
+                                                <input type="radio" name="brand" id="" class="intro__filter_check"
+                                                    value="Opel">
+                                                <span href="" class="popup__submenu_link">Opel</span>
+
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -468,12 +563,14 @@
                         <div class="services__slider-container">
                             <div class="services__slider swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="services__slide swiper-slide">
+                                    <a class="services__slide swiper-slide" data-fancybox="gallery"
+                                        data-src="img/cars.png">
                                         <img src="img/cars.png" alt="">
-                                    </div>
-                                    <div class="services__slide swiper-slide">
+                                    </a>
+                                    <a class="services__slide swiper-slide" data-fancybox="gallery"
+                                        data-src="img/cars.png">
                                         <img src="img/cars.png" alt="">
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="swiper-pagination"></div>
 
@@ -1120,7 +1217,8 @@
                             <p>Мы готовы ответить на любой интересующий вас вопрос.</p>
                         </div>
                         <div class="questions__recall flex">
-                            <div class="recall__btn btn btn-yell">Задать свой вопрос</div>
+                            <div class="recall__btn btn btn-yell" data-fancybox data-src="#request">Задать свой вопрос
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1219,7 +1317,8 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="feedback__recall recall-btn btn btn-yell">Оставить заявку</button>
+                    <button class="feedback__recall recall-btn btn btn-yell" data-fancybox data-src="#recall">Оставить
+                        заявку</button>
                 </div>
             </section>
         </main>
@@ -3369,7 +3468,8 @@
                             <a href="" class="mobile__menu_link">Контакты</a>
                         </li>
                     </ul>
-                    <button class="mobile__recall recall-btn btn btn-yell">Оставить заявку</button>
+                    <button class="mobile__recall recall-btn btn btn-yell" data-fancybox data-src="#recall">Оставить
+                        заявку</button>
                 </div>
                 <div class="mobile__menu_footer">
 
@@ -3425,7 +3525,55 @@
                 </div>
             </div>
         </div>
-        <div class="modal"></div>
+        <div class="modal">
+            <div id="recall" class="modal__content">
+                <div style="background: url(img/modal-img.png);" class="modal__img"></div>
+                <div class="modal__form">
+                    <form class="form_content">
+                        <div class="recall__form_title">Оставить заявку</div>
+                        <label class="recall__form_label">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <span>*</span>
+                        </label>
+                        <label class="recall__form_label">
+                            <input type="tel" name="phone" placeholder="Ваш телефон">
+                            <span>*</span>
+                        </label>
+                        <div class="recall__form_control flex">
+                            <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
+                            <label class="recall__form_agree">
+                                <input type="checkbox" name="agree" checked>
+                                <a href="policy.html">Политика конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="request" class="modal__content">
+                <div style="background: url(img/modal-img.png);" class="modal__img"></div>
+                <div class="modal__form">
+                    <form class="form_content">
+                        <div class="recall__form_title">Оставить заявку</div>
+                        <label class="recall__form_label">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <span>*</span>
+                        </label>
+                        <label class="recall__form_label">
+                            <input type="tel" name="phone" placeholder="Ваш телефон">
+                            <span>*</span>
+                        </label>
+                        <div class="recall__form_control flex">
+                            <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
+                            <label class="recall__form_agree">
+                                <input type="checkbox" name="agree" checked>
+                                <a href="policy.html">Политика конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="libs/jquery/jquery.js"></script>
