@@ -140,7 +140,10 @@
     padding: 90px 45px 85px;
   }
   .questions .container {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .questions__control {
     width: 100%;
@@ -165,7 +168,8 @@
     font-size: 20px;
   }
   .map__contacts_items {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
     margin-top: 40px;
   }
@@ -204,5 +208,17 @@
   .copyrait__text {
     width: 66%;
     gap: 30px;
+  }
+  .modal__form > .form_content {
+    padding: 10px 0;
+  }
+  .modal__form .recall__form_control {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }

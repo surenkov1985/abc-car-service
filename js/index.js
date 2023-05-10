@@ -112,6 +112,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 			// $(menuItem).addClass("active");
 		}
+
+		if (e.target.classList.contains("mobile__recall")) {
+			$("body").removeClass("hidden");
+			$(".mobile").removeClass("show");
+			$(".mobile__menu_item").each((_, item) => {
+				$(item).removeClass("active");
+			});
+			$(".mobile__menu_subitem").each((_, item) => {
+				$(item).removeClass("active");
+			});
+		}
 	});
 
 	$(document).on("click", ".intro__filter_select", function (e) {
@@ -123,6 +134,20 @@ document.addEventListener("DOMContentLoaded", function () {
 		console.log(e);
 		$(".intro__filter_select span").text(e.target.value);
 		$(".intro__filter_list").removeClass("show");
+	});
+
+	$(document).on("click", ".questions__point", function (e) {
+
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+		} else {
+			$(".questions__point").each((_, point) => {
+				$(point).removeClass("active");
+			});
+			if (e.target.classList.contains("questions__point_open")) {
+				$(this).addClass("active");
+			}
+		}
 	});
 
 	loadScript(window.location.protocol + "//api-maps.yandex.ru/2.1/?lang=ru_RU", setMap);

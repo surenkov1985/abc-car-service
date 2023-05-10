@@ -197,6 +197,7 @@
         position: absolute;
         right: 45px;
         bottom: 65px;
+        z-index: 5;
 
         &_btn {
             display: flex;
@@ -760,7 +761,7 @@
             font-size: 16px;
             line-height: 120%;
 
-            & input {
+            & input, & textarea {
                 width: 100%;
                 color: var(--light-text-color);
                 font-weight: 600;
@@ -1069,6 +1070,19 @@
                 visibility: visible;
                 margin-top: 55px;
             }
+
+            & .questions__point_open {
+                transform: rotate(-45deg);
+            }
+        }
+
+        &_open {
+            transition: all var(--transition-duration);
+            cursor: pointer;
+
+            & svg {
+                pointer-events: none;
+            }
         }
 
         &_title {
@@ -1099,7 +1113,7 @@
             font-size: 16px;
             line-height: 140%;
             color: var(--light-text-color);
-
+            transition: all var(--transition-duration);
             display: flex;
             gap: 48px;
             visibility: hidden;

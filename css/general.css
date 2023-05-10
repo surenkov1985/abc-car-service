@@ -56,6 +56,7 @@ img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -70,13 +71,15 @@ h6 {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :focus {
@@ -125,9 +128,11 @@ button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
+textarea,
 button,
 input {
   line-height: normal;
@@ -156,11 +161,19 @@ select:-webkit-autofill:focus {
   position: fixed;
   left: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 45px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: 10;
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
 @media (max-width: 1500px) {
@@ -180,13 +193,18 @@ select:-webkit-autofill:focus {
   position: absolute;
   white-space: nowrap;
   top: 43%;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: var(--light-gray-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 @media (max-height: 700px) {
@@ -218,8 +236,13 @@ select:-webkit-autofill:focus {
   }
 }
 .fixed__scls_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 26px;
 }
 @media (max-height: 650px) {
@@ -228,6 +251,7 @@ select:-webkit-autofill:focus {
   }
 }
 .fixed__scls_item a svg path {
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
 .fixed__scls_item:hover a svg path {

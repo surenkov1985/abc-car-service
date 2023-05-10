@@ -36,11 +36,17 @@
   }
   .intro__filter_title {
     font-size: 16px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .intro__filter_form {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 30px;
   }
   .intro__filter_form .col {
@@ -83,7 +89,9 @@
   }
   .services__advantages_item {
     padding: 0px 5px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .services__advantages_item-title {
     margin-top: 16px;
@@ -104,6 +112,8 @@
     font-size: 18px;
   }
   .promotion .services__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .recall {
@@ -123,14 +133,21 @@
     margin-top: 16px;
   }
   .recall__form_control {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 20px;
   }
   .recall__form_label {
     margin-top: 20px;
     padding: 15px 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 0;
   }
@@ -170,7 +187,10 @@
     padding: 60px 20px;
   }
   .team .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 30px;
   }
   .team__card {
@@ -184,8 +204,13 @@
     margin-bottom: 15px;
   }
   .team__card_stars {
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     font-size: 14px;
   }
   .team__card_content {
@@ -282,7 +307,10 @@
   }
   .copyrait .container {
     gap: 15px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .copyrait__icon svg {
     width: 18px;
@@ -292,6 +320,22 @@
     gap: 20px;
   }
   .copyrait__links {
+    width: 100%;
+  }
+  .modal__content.fancybox__content > .is-close {
+    width: 45px;
+    height: 45px;
+    top: 10px;
+    right: 10px;
+  }
+  .modal__img {
+    width: 0%;
+  }
+  .modal__form {
+    width: 100%;
+    padding: 60px 20px 40px;
+  }
+  .modal__form .recall__form_label {
     width: 100%;
   }
 }
@@ -309,8 +353,13 @@
     font-size: 16px;
   }
   .intro__filter_form {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 30px;
   }
   .intro__filter_form .col {

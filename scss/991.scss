@@ -309,4 +309,18 @@
             gap: 30px;
         }
     }
+
+    .modal {
+        &__form {
+            & > .form_content {
+                padding: 10px 0;
+            }
+    
+            & .recall__form_control {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
 }
+

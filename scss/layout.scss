@@ -1086,6 +1086,10 @@
         &.fancybox__content {
             padding: 0;
 
+            & input:focus:not(.carousel__button.is-close), & textarea:focus:not(.carousel__button.is-close) {
+                outline: none;
+            }
+
             &>.is-close {
                 top: 35px;
                 right: 40px;

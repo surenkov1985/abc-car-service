@@ -15,8 +15,13 @@ body.hidden {
 .wrapper {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow-x: hidden;
 }
 
@@ -27,6 +32,7 @@ body.hidden {
 }
 
 .logo svg path {
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
 .logo:hover svg path {
@@ -35,14 +41,20 @@ body.hidden {
 
 .nav-link {
   color: var(--white-color);
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
   font-size: 18px;
   line-height: 120%;
 }
 .nav-link svg rect {
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
 .nav-link:hover {
@@ -63,6 +75,7 @@ a[href*=tel] {
 
 .phone-link {
   color: var(--light-gray-color);
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
   font-size: 24px;
   line-height: 135%;
@@ -86,6 +99,7 @@ a[href*=tel] {
   padding: 20px 40px;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
   display: block;
   white-space: nowrap;
@@ -145,11 +159,14 @@ a[href*=tel] {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .wrap {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .swiper-pagination {
@@ -174,10 +191,18 @@ a[href*=tel] {
   height: 66px;
   border-radius: 50%;
   background: #3B434A;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -187,7 +212,8 @@ a[href*=tel] {
   background: var(--bg-color);
 }
 .swiper-button-next {
-  transform: rotate(-180deg), translateY(50%);
+  -webkit-transform: rotate(-180deg), translateY(50%);
+          transform: rotate(-180deg), translateY(50%);
 }
 @media (min-width: 1670px) {
   .swiper-button-next {
