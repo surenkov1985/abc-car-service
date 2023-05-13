@@ -11,14 +11,14 @@
     .header {
         padding: 25px 30px;
 
-        &__phone {
-            display: none;
+        // &__phone {
+        //     display: none;
 
-            &-icon {
-                display: block;
-                margin-left: auto;
-            }
-        }
+        //     &-icon {
+        //         display: block;
+        //         margin-left: auto;
+        //     }
+        // }
 
         &__search {
 
@@ -197,7 +197,7 @@
     }
 
     .swiper {
-        overflow: visible;
+        // overflow: visible;
     }
 
     .swiper-button {
@@ -368,7 +368,7 @@
     }
 
     .section_map {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: auto;
 
         & .container {

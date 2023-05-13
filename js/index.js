@@ -43,13 +43,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	$(document).on("click", ".header__nav_item span", function () {
 		$("body").addClass("hidden");
-		$(".popup").addClass("show");
+		// $(".popup").addClass("show");
+		$(".popup").css({ opacity: 1, visibility: "visible" });
+		setTimeout(() => {
+			$(".popup__menu").css({ transform: "translateX(0)" });
+		}, 300);
 	});
+
+	if (document.querySelector(".team")) {
+		let padding = parseInt(window.getComputedStyle(document.querySelector(".team")).paddingLeft);
+		let innerWidth = $(".team .container").width() * 0.75 + $(".team .container").offset().left - padding;
+		if (window.innerWidth > 768) {
+			$(".team__content").css("width", innerWidth + "px");
+		}
+
+		window.addEventListener("resize", function (e) {
+			if (window.innerWidth > 768) {
+				padding = parseInt(window.getComputedStyle(document.querySelector(".team")).paddingLeft);
+				innerWidth = $(".team .container").width() * 0.75 + $(".team .container").offset().left - padding;
+				$(".team__content").css("width", innerWidth + "px");
+			} else {
+				$(".team__content").css("width", "100%");
+			}
+		});
+	}
+
+	if (document.querySelector(".reviews")) {
+		let padding = parseInt(window.getComputedStyle(document.querySelector(".reviews")).paddingLeft);
+		let innerWidth = $(".reviews .container").width() * 0.75 + $(".reviews .container").offset().left - padding;
+		if (window.innerWidth > 768) {
+			$(".reviews__content").css("width", innerWidth + "px");
+		}
+
+		window.addEventListener("resize", function (e) {
+			if (window.innerWidth > 768) {
+				padding = parseInt(window.getComputedStyle(document.querySelector(".reviews")).paddingLeft);
+				innerWidth = $(".reviews .container").width() * 0.75 + $(".reviews .container").offset().left - padding;
+				$(".reviews__content").css("width", innerWidth + "px");
+			} else {
+				$(".reviews__content").css("width", "100%");
+			}
+		});
+	}
 
 	$(document).on("click", ".popup", function (e) {
 		if (e.target.classList.contains("popup") || e.target.classList.contains("popup_close")) {
 			$("body").removeClass("hidden");
-			$(".popup").removeClass("show");
+			// $(".popup").removeClass("show");
+			$(".popup__menu").css({ transform: "translateX(-100%)" });
+			setTimeout(() => {
+				$(".popup").css({ opacity: 0, visibility: "hidden" });
+			}, 500);
 		}
 
 		if (e.target.classList.contains("popup__more-btn")) {
@@ -65,13 +109,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	$(document).on("click", ".burger-menu", function () {
 		$("body").addClass("hidden");
-		$(".mobile").addClass("show");
+		// $(".mobile").addClass("show");
+		$(".mobile").css({ opacity: 1, visibility: "visible" });
+		setTimeout(() => {
+			$(".mobile__menu").css({ transform: "translateX(0)" });
+		}, 300);
 	});
 
 	$(document).on("click", ".mobile", function (e) {
 		if (e.target.classList.contains("mobile") || e.target.classList.contains("mobile_close")) {
 			$("body").removeClass("hidden");
-			$(".mobile").removeClass("show");
+			// $(".mobile").removeClass("show");
+			$(".mobile__menu").css({ transform: "translateX(-100%)" });
+			setTimeout(() => {
+				$(".mobile").css({ opacity: 0, visibility: "hidden" });
+			}, 500);
 			$(".mobile__menu_item").each((_, item) => {
 				$(item).removeClass("active");
 			});
@@ -115,7 +167,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (e.target.classList.contains("mobile__recall")) {
 			$("body").removeClass("hidden");
-			$(".mobile").removeClass("show");
+			// $(".mobile").removeClass("show");
+			$(".mobile__menu").css({ transform: "translateX(-100%)" });
+			setTimeout(() => {
+				$(".mobile").css({ opacity: 0, visibility: "hidden" });
+			}, 500);
 			$(".mobile__menu_item").each((_, item) => {
 				$(item).removeClass("active");
 			});
@@ -137,7 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	$(document).on("click", ".questions__point", function (e) {
-
 		if ($(this).hasClass("active")) {
 			$(this).removeClass("active");
 		} else {

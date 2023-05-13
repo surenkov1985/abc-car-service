@@ -21,6 +21,7 @@
             width: 30px;
         }
     }
+
     .h1 {
         font-size: 30px;
     }
@@ -33,21 +34,25 @@
         padding: 7px 10px;
         font-size: 14px;
     }
+
     .intro {
         padding: 150px 20px 50px;
 
         &__subtitle {
             font-size: 16px;
+
             & img {
                 width: 26px;
             }
         }
+
         &__filter {
 
             &_title {
                 font-size: 16px;
                 flex-wrap: wrap;
             }
+
             &_form {
                 flex-direction: column;
                 align-items: flex-start;
@@ -69,17 +74,20 @@
         &__bottom {
             padding: 180px 20px 40px;
         }
-        &__promo{
-            &_card{
-                width: calc(100% - 40px);
-            &-content {
-            padding: 20px 30px;
 
-            
-            }
-            &-title {
-                font-size: 22px;
-            }
+        &__promo {
+            &_card {
+                width: calc(100% - 40px);
+
+                &-content {
+                    padding: 20px 30px;
+
+
+                }
+
+                &-title {
+                    font-size: 22px;
+                }
 
             }
         }
@@ -90,7 +98,7 @@
             // gap: 10px;
 
             // & span {
-                
+
             //     width: 26px;
             //     height: 26px;
 
@@ -127,6 +135,7 @@
             &_item {
                 padding: 0px 5px;
                 align-items: center;
+
                 &-title {
                     margin-top: 16px;
                     font-size: 16px;
@@ -143,6 +152,7 @@
 
     .promotion {
         padding: 60px 20px 40px;
+
         &__title {
             &_slider {
                 padding: 8px 0 10px;
@@ -157,6 +167,7 @@
             display: flex;
         }
     }
+
     .recall {
         padding: 60px 20px 50px;
 
@@ -177,6 +188,7 @@
             &_subtitle {
                 margin-top: 16px;
             }
+
             &_control {
                 flex-direction: column;
                 align-items: flex-start;
@@ -246,11 +258,11 @@
 
         & .container {
             flex-direction: column;
-            gap: 30px   ;
+            gap: 30px;
         }
 
         &__card {
-            padding-top:20px;
+            padding-top: 20px;
 
             &_name {
                 font-size: 18px;
@@ -294,7 +306,7 @@
         }
 
         &__content {
-            &_points{
+            &_points {
                 gap: 25px;
             }
         }
@@ -324,7 +336,7 @@
 
     .map {
         height: 350px;
-        
+
         &__contacts {
             padding: 30px 20px;
 
@@ -339,6 +351,7 @@
             &_items {
                 margin-top: 20px;
             }
+
             &_line {
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -361,13 +374,19 @@
         & .container {
             gap: 20px;
         }
+
         padding: 30px 20px;
 
-        &__scls {
+        &__logo {
+            display: none;
+        }
 
+        &__scls {
+            margin-left: 0;
             &_list {
                 gap: 15px;
             }
+
             &_item {
                 width: 45px;
                 height: 45px;
@@ -376,6 +395,7 @@
 
         &__recall {
             margin-left: auto;
+            // display: none;
         }
     }
 
@@ -388,6 +408,7 @@
             &_title {
                 margin-bottom: 20px;
             }
+
             &_col {
                 width: 100%;
             }
@@ -417,19 +438,21 @@
     }
 
     .modal {
-        &__content.fancybox__content > .is-close {
+        &__content.fancybox__content>.is-close {
             width: 45px;
             height: 45px;
             top: 10px;
             right: 10px;
         }
-    
+
         &__img {
             width: 0%;
         }
+
         &__form {
             width: 100%;
             padding: 60px 20px 40px;
+
             & .recall__form_label {
                 width: 100%;
             }
@@ -440,6 +463,17 @@
 
 
 @media (max-width: 420px) {
+    .header {
+        &__phone {
+            display: none;
+
+            &-icon {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+
     .h1 {
         font-size: 26px;
     }
@@ -452,11 +486,13 @@
                 display: none;
             }
         }
+
         &__filter {
 
             &_title {
                 font-size: 16px;
             }
+
             &_form {
                 flex-direction: column;
                 align-items: flex-start;
@@ -491,5 +527,9 @@
         }
     }
 
-    
+    .feedback__recall {
+        width: 100%;
+    }
+
+
 }

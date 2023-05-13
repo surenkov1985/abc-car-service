@@ -168,7 +168,7 @@ select:-webkit-autofill:focus {
         align-items: center;
         padding: 0 45px;
         flex-direction: column;
-        z-index: 10;
+        // z-index: 10;
         transition: all var(--transition-duration);
 
         @media (max-width: 1500px) {
