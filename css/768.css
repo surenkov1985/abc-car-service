@@ -53,11 +53,14 @@
   .intro__scroll {
     display: none;
   }
+  .services {
+    padding: 90px 30px 40px;
+  }
   .services__top {
-    padding: 90px 30px 210px;
+    padding: 0px 0px 210px;
   }
   .services__bottom {
-    padding: 210px 30px 40px;
+    padding: 210px 0px 0px;
   }
   .services__more span {
     width: 30px;

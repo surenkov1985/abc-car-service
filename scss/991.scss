@@ -1,8 +1,8 @@
 @media (max-width:991px) {
     .intro {
         padding-top: 170px;
-        background-position: 0px!important;
-        background-size: cover!important;
+        background-position: 0px !important;
+        background-size: cover !important;
 
         &__content {
             width: 100%;
@@ -50,13 +50,14 @@
     }
 
     .services {
+        padding: 90px 45px 90px;
 
         &__top {
-            padding: 90px 45px 250px
+            padding: 0px 0 250px
         }
 
         &__bottom {
-            padding: 250px 45px 90px;
+            padding: 250px 0 0;
         }
 
         &__more {
@@ -82,18 +83,19 @@
                 padding: 30px 45px 45px;
             }
 
-            
+
             &_text {
                 margin-top: 16px;
             }
         }
 
-        &__promo_card{
+        &__promo_card {
             &-content {
-            padding: 50px 60px;
+                padding: 50px 60px;
 
-            
+
             }
+
             &-title {
                 font-size: 28px;
             }
@@ -102,6 +104,7 @@
 
     .promotion {
         padding: 110px 45px 50px;
+
         &__title {
             &_slider {
                 padding: 10px 0 15px;
@@ -275,8 +278,7 @@
             display: none;
         }
 
-        &__recall {
-        }
+        &__recall {}
 
         &__scls {
             &_item {
@@ -291,6 +293,7 @@
 
         &__menu {
             row-gap: 30px;
+
             &_col {
                 width: 33.3%;
             }
@@ -312,10 +315,10 @@
 
     .modal {
         &__form {
-            & > .form_content {
+            &>.form_content {
                 padding: 10px 0;
             }
-    
+
             & .recall__form_control {
                 flex-direction: column;
                 align-items: flex-start;
@@ -323,4 +326,3 @@
         }
     }
 }
-

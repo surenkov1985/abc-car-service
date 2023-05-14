@@ -1,10 +1,10 @@
 @media (max-width: 768px) {
-    
+
     .logo {
-            
+
         & svg {
             width: 100px;
-            
+
         }
     }
 
@@ -41,10 +41,11 @@
             margin-right: 0;
 
             & svg {
-            width: 35px;
-        }
+                width: 35px;
+            }
         }
     }
+
     .h1 {
         font-size: 40px;
     }
@@ -52,6 +53,7 @@
     .h2 {
         font-size: 24px;
     }
+
     .btn {
         font-size: 16px;
         padding: 12px 20px;
@@ -89,12 +91,14 @@
     }
 
     .services {
+        padding: 90px 30px 40px;
 
         &__top {
-            padding: 90px 30px 210px
+            padding: 0px 0px 210px
         }
+
         &__bottom {
-            padding: 210px 30px 40px;
+            padding: 210px 0px 0px;
         }
 
         &__more {
@@ -114,17 +118,17 @@
 
         &__cards {
             margin-top: 55px;
-                
-                & .swiper-wrapper {
-                    
+
+            & .swiper-wrapper {
+
                 display: flex;
                 grid-gap: 0;
                 // grid-template-columns: repeat(2, 1fr);
                 // grid-gap: 40px;
                 // position: relative;
-                }
-                
-            
+            }
+
+
         }
 
         &__logo {
@@ -133,6 +137,7 @@
 
         &__card {
             height: auto;
+
             &_ind {
                 font-size: 16px;
             }
@@ -144,6 +149,7 @@
             &_content {
                 padding: 30px;
             }
+
             &_text {
                 margin-top: 16px;
             }
@@ -151,37 +157,40 @@
             &:first-child {
                 border-radius: 10px;
             }
-    
+
             &:nth-child(2) {
                 border-radius: 10px;
             }
-    
+
             &:nth-child(3) {
                 border-radius: 10px;
             }
-    
+
             &:nth-child(4) {
                 border-radius: 10px;
             }
         }
-        
-        &__promo{
-            
+
+        &__promo {
+
 
             &-l-image,
             &-s-image {
                 display: none;
             }
-            &_card{
-                width: calc(100% - 60px);
-            &-content {
-            padding: 40px 50px;
 
-            
-            }
-            &-title {
-                font-size: 26px;
-            }
+            &_card {
+                width: calc(100% - 60px);
+
+                &-content {
+                    padding: 40px 50px;
+
+
+                }
+
+                &-title {
+                    font-size: 26px;
+                }
 
             }
         }
@@ -204,12 +213,13 @@
 
         &-prev,
         &-next {
-            display: none!important;
+            display: none !important;
         }
     }
 
     .promotion {
         padding: 80px 30px 50px;
+
         &__title {
             &_slider {
                 padding: 8px 0 10px;
@@ -248,6 +258,7 @@
 
         &__img {
             width: 0;
+
             & img {
                 display: none;
             }
@@ -259,8 +270,8 @@
             &_label {
                 width: 46%;
                 display: inline-flex;
-                    margin-right: 2%;
-            
+                margin-right: 2%;
+
             }
 
             &_control {
@@ -274,7 +285,7 @@
 
         & .container {
             flex-direction: column;
-            gap: 40px   ;
+            gap: 40px;
         }
 
         &__control {
@@ -319,7 +330,7 @@
 
         & .container {
             flex-direction: column;
-            gap: 40px   ;
+            gap: 40px;
         }
 
         &__control {
@@ -332,7 +343,7 @@
         }
 
         &__card {
-            padding-top:20px;
+            padding-top: 20px;
 
             &_name {
                 font-size: 20px;
@@ -373,14 +384,14 @@
 
         & .container {
             position: static;
-            
+
         }
     }
 
     .map {
         position: static;
         height: 500px;
-        
+
         &__contacts {
             background: none;
             max-width: 100%;
@@ -398,6 +409,7 @@
             &_items {
                 margin-top: 30px;
             }
+
             &_line {
                 margin-top: 30px;
                 margin-bottom: 30px;
@@ -412,14 +424,14 @@
             display: none;
         }
 
-        &__recall {
-        }
+        &__recall {}
 
         &__scls {
 
             &_list {
                 gap: 15px;
             }
+
             &_item {
                 width: 45px;
                 height: 45px;
@@ -432,6 +444,7 @@
 
         &__menu {
             row-gap: 30px;
+
             &_col {
                 width: 50%;
             }
@@ -461,23 +474,24 @@
     }
 
     .modal {
-        &__content.fancybox__content > .is-close {
+        &__content.fancybox__content>.is-close {
             width: 50px;
             height: 50px;
             top: 10px;
             right: 10px;
         }
-    
+
         &__img {
             width: 0%;
         }
+
         &__form {
             width: 100%;
             padding: 60px 30px 40px;
+
             & .recall__form_label {
                 width: 100%;
             }
         }
     }
 }
-

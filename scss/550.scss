@@ -66,13 +66,14 @@
     }
 
     .services {
+        padding: 40px 20px 40px;
 
         &__top {
-            padding: 40px 20px 180px;
+            padding: 0px 0px 180px;
         }
 
         &__bottom {
-            padding: 180px 20px 40px;
+            padding: 180px 0px 0px;
         }
 
         &__promo {
@@ -383,6 +384,7 @@
 
         &__scls {
             margin-left: 0;
+
             &_list {
                 gap: 15px;
             }

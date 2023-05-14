@@ -122,6 +122,16 @@
   height: 100%;
   position: relative;
   z-index: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .intro__content {
@@ -137,6 +147,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+}
+
+.intro__tagline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--light-gray-color);
+  margin-top: 73px;
+  max-width: 320px;
+}
+
+.intro__tagline p {
+  margin-bottom: 16px;
 }
 
 .intro__subtitle {
@@ -388,9 +411,13 @@
   fill: var(--hover-yell-color);
 }
 
+.services {
+  padding: 100px 45px 120px;
+}
+
 .services__top {
   background: var(--bg-color);
-  padding: 150px 45px 390px;
+  padding: 50px 0px 390px;
 }
 
 .services__title-row {
@@ -459,7 +486,7 @@
 }
 
 .services__bottom {
-  padding: 360px 45px 130px;
+  padding: 360px 0px 10px;
   position: relative;
 }
 
@@ -2095,4 +2122,16 @@
 
 .contacts .map__contacts .breadcrumbs {
   margin-bottom: 50px;
+}
+
+.works {
+  padding: 110px 45px;
+}
+
+.works .h2 {
+  text-transform: uppercase;
+}
+
+.works__slider {
+  margin-top: 55px;
 }
