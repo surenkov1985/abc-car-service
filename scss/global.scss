@@ -167,6 +167,14 @@ a[href*="tel"] {
     color: var(--light-gray-color);
 }
 
+.h4 {
+    font-family: var(--title-font);
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 120%;
+    color: var(--white-color);
+}
+
 .dark-gray {
     background: var(--dark-gray-color);
 }

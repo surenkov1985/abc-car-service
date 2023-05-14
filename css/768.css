@@ -73,6 +73,8 @@
     margin-top: 55px;
   }
   .services__cards .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     grid-gap: 0;
   }
@@ -165,17 +167,24 @@
   }
   .recall__form_label {
     width: 46%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-right: 2%;
   }
   .recall__form_control {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .reviews {
     padding: 70px 30px;
   }
   .reviews .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 40px;
   }
   .reviews__control {
@@ -208,7 +217,10 @@
     padding: 70px 30px;
   }
   .team .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 40px;
   }
   .team__control {
@@ -244,7 +256,10 @@
     margin-top: 30px;
   }
   .section_map {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     height: auto;
   }
   .section_map .container {
@@ -300,7 +315,10 @@
   }
   .copyrait .container {
     gap: 25px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .copyrait__icon svg {
     width: 18px;

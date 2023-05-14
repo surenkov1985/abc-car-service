@@ -224,6 +224,31 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 	const scrollObserver = new IntersectionObserver(scrollCallback, scrollOptions);
 	scrollObserver.observe(document.querySelector(".obs-target"));
+
+	// if (document.querySelector(".contacts")) {
+	// 	const header = document.querySelectorAll(".header")[0];
+	// 	const contacts = document.querySelector(".map__contacts");
+	// 	const map = document.querySelector(".map");
+	// 	let mapHeight = contacts.offsetHeight;
+	// 	let mapWidth = window.innerWidth - document.querySelector(".map__contacts").offsetLeft - document.querySelector(".map__contacts").offsetWidth;
+	// 	map.style.width = mapWidth + "px";
+	// 	map.style.height = mapHeight + "px";
+	// 	console.log(mapHeight);
+	// 	if (window.innerWidth > 768) {
+	// 		window.addEventListener("resize", function(){
+	// 			mapHeight = contacts.offsetHeight;
+	// 			mapWidth =
+	// 				window.innerWidth - document.querySelector(".map__contacts").offsetLeft - document.querySelector(".map__contacts").offsetWidth;
+	// 			map.style.width = mapWidth + "px";
+	// 			map.style.height = mapHeight + "px";
+	// 		})
+	// 	} else {
+	// 		map.style.width = "100%";
+	// 		map.style.height = mapHeight + "px";
+	// 	}
+		
+		
+	// }
 });
 
 function setMap() {
