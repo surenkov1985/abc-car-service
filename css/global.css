@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 body.hidden {
   overflow: hidden;
 }
@@ -36,7 +35,6 @@ body.hidden {
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 .logo:hover svg path {
   fill: var(--hover-yell-color);
 }
@@ -55,27 +53,23 @@ body.hidden {
   font-size: 18px;
   line-height: 120%;
 }
-
 .nav-link svg rect {
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 .nav-link:hover {
   color: var(--hover-yell-color);
 }
-
 .nav-link:hover svg rect {
   fill: var(--hover-yell-color);
 }
-
 @media (max-width: 1500px) {
   .nav-link {
     font-size: 16px;
   }
 }
 
-a[href*="tel"] {
+a[href*=tel] {
   white-space: nowrap;
 }
 
@@ -86,15 +80,12 @@ a[href*="tel"] {
   font-size: 24px;
   line-height: 135%;
 }
-
 .phone-link:hover {
   color: var(--hover-yell-color);
 }
-
 .phone-link:hover svg rect {
   fill: var(--hover-yell-color);
 }
-
 @media (max-width: 1500px) {
   .phone-link {
     font-size: 22px;
@@ -110,28 +101,32 @@ a[href*="tel"] {
   cursor: pointer;
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   white-space: nowrap;
 }
-
 .btn-yell {
   background: var(--main-yell-color);
   color: var(--bg-color);
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 .btn-yell:hover {
   background: var(--hover-yell-color);
 }
-
 .btn-light {
   background: var(--white-color);
   color: var(--bg-color);
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 .btn-light:hover {
   background: var(--hover-yell-color);
   -webkit-box-shadow: 0px 3px 4px 1px rgba(243, 243, 243, 0.2);
@@ -139,14 +134,29 @@ a[href*="tel"] {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
-
+.btn-border {
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+}
+.btn-border:hover, .btn-border.selected {
+  background: var(--white-color);
+  color: var(--bg-color);
+}
+.btn-border.selected {
+  cursor: default;
+}
+.btn-border.selected:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .btn:hover {
   -webkit-box-shadow: 0px 3px 4px 1px rgba(243, 243, 243, 0.2);
           box-shadow: 0px 3px 4px 1px rgba(243, 243, 243, 0.2);
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
-
 .btn-green {
   padding: 12px 23px;
   background: var(--main-green-color);
@@ -177,6 +187,9 @@ a[href*="tel"] {
   font-size: 40px;
   line-height: 120%;
   color: var(--light-gray-color);
+}
+.h2 span {
+  color: var(--main-yell-color);
 }
 
 .h3 {
@@ -250,27 +263,22 @@ a[href*="tel"] {
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 .swiper-button-prev::after, .swiper-button-next::after {
   content: none;
 }
-
 .swiper-button-prev:hover, .swiper-button-next:hover {
   background: var(--bg-color);
 }
-
 .swiper-button-next {
   -webkit-transform: rotate(-180deg), translateY(50%);
           transform: rotate(-180deg), translateY(50%);
 }
-
 @media (min-width: 1670px) {
   .swiper-button-next {
     left: calc(100% + 40px);
     right: auto;
   }
 }
-
 @media (min-width: 1670px) {
   .swiper-button-prev {
     right: calc(100% + 40px);

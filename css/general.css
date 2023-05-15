@@ -151,7 +151,7 @@ select:-webkit-autofill:focus {
   border: none;
 }
 
-[class*="ymaps-2-1"][class*="-ground-pane"] {
+[class*=ymaps-2-1][class*=-ground-pane] {
   -webkit-filter: grayscale(100%);
 }
 
@@ -175,13 +175,11 @@ select:-webkit-autofill:focus {
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 @media (max-width: 1500px) {
   .fixed__contacts {
     left: -100px;
   }
 }
-
 @media (max-height: 700px) {
   .fixed__contacts__addr {
     top: 25%;
@@ -190,7 +188,6 @@ select:-webkit-autofill:focus {
     bottom: 5%;
   }
 }
-
 .fixed__addr {
   position: absolute;
   white-space: nowrap;
@@ -209,15 +206,13 @@ select:-webkit-autofill:focus {
           align-items: center;
   cursor: pointer;
 }
-
 @media (max-height: 700px) {
   .fixed__addr {
     top: 35%;
   }
 }
-
 .fixed__addr::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -225,24 +220,20 @@ select:-webkit-autofill:focus {
   background: var(--main-yell-color);
   right: calc(100% + 7px);
 }
-
 .fixed__scls {
   position: absolute;
   bottom: 10%;
 }
-
 @media (max-height: 700px) {
   .fixed__scls {
     bottom: 15%;
   }
 }
-
 @media (max-height: 650px) {
   .fixed__scls {
     bottom: 20%;
   }
 }
-
 .fixed__scls_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,18 +244,15 @@ select:-webkit-autofill:focus {
           flex-direction: column;
   gap: 26px;
 }
-
 @media (max-height: 650px) {
   .fixed__scls_list {
     gap: 15px;
   }
 }
-
 .fixed__scls_item a svg path {
   -webkit-transition: all var(--transition-duration);
   transition: all var(--transition-duration);
 }
-
 .fixed__scls_item:hover a svg path {
   fill: var(--hover-yell-color);
 }

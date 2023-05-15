@@ -181,6 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
+	if (document.querySelector(".reviews-inner")) {
+		const cardsHeight = document.querySelector(".reviews-inner__cards").offsetHeight / 2;
+		// document.querySelector(".reviews-inner__cards").style.height = cardsHeight + "px"
+	}
+
 	$(document).on("click", ".intro__filter_select", function (e) {
 		e.preventDefault();
 		$(".intro__filter_list").toggleClass("show");
@@ -204,6 +209,43 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	});
+
+	$(document).on("change", ".news__filter_form input", function(e) {
+		$(".news__filter_label").each((_, label) => {
+			$(label).removeClass("selected");
+		});
+
+		if (e.target.checked) {
+			$(this).closest(".news__filter_label").addClass("selected");
+		}
+		$(".news__filter_form").submit()
+	});
+
+	if (this.location.search) {
+		const params = new URLSearchParams(this.location.search)
+		console.log(params.get("category"));
+
+		$(".news__filter_label").each((_, label) => {
+
+			$(label).removeClass("selected");
+
+			if ($(label).children("input").attr("value") === params.get("category")) {
+				$(label).children("input").attr("checked", true)
+				$(label).addClass("selected")
+			}
+		});
+	} else {
+		$(".news__filter_label").each((_, label) => {
+
+			$(label).removeClass("selected");
+
+			if ($(label).children("input").attr("value") === "") {
+				$(label).children("input").attr("checked", true)
+				$(label).addClass("selected")
+			}
+		});
+	}
+	
 
 	loadScript(window.location.protocol + "//api-maps.yandex.ru/2.1/?lang=ru_RU", setMap);
 

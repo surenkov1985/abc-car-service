@@ -348,7 +348,6 @@
     width: 100%;
   }
 }
-
 @media (max-width: 420px) {
   .header__phone {
     display: none;
