@@ -141,17 +141,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 
-		$(document).on("click", ".examples__tab", function(){
-			const id = $(this).attr("data-target")
+		$(document).on("click", ".examples__tab", function () {
+			const id = $(this).attr("data-target");
 			$(".examples__tab").each((_, tab) => {
 				$(tab).removeClass("selected");
 			});
-	
+
 			$(this).addClass("selected");
 			examplesSlider.destroy();
 			$(".examples__slider").each((_, slider) => {
 				$(slider).removeClass("active");
-				if ($(slider).attr("id") === id){
+				if ($(slider).attr("id") === id) {
 					$(slider).addClass("active");
 					examplesSlider = new Swiper(slider, {
 						slidesPerView: 1.5,
@@ -179,8 +179,8 @@ document.addEventListener("DOMContentLoaded", function () {
 							},
 						},
 					});
-			}
-			})
+				}
+			});
 		});
 	}
 	// const examplesSlider = new Swiper(".examples__slider", {
@@ -209,6 +209,57 @@ document.addEventListener("DOMContentLoaded", function () {
 	// 		},
 	// 	},
 	// });
+
+	const newsSlider = new Swiper(".news-detail__slider", {
+		slidesPerView: 1.5,
+		slidesPerGroup: 2,
+		spaceBetween: 15,
+		speed: 1000,
+		breakpoints: {
+			550: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 3,
+				slidesPerGroup: 1,
+				spaceBetween: 40,
+				pagination: {
+					el: ".news-detail__slider .swiper-pagination",
+					type: "bullets",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".news-detail__slider-container .swiper-button-next",
+					prevEl: ".news-detail__slider-container .swiper-button-prev",
+				},
+			},
+		},
+	});
+
+	const moreNewsSlider = new Swiper(".more-news__slider", {
+		slidesPerView: 1.5,
+		slidesPerGroup: 2,
+		spaceBetween: 15,
+		loop: true,
+		touchRatio: 1,
+		speed: 1000,
+		breakpoints: {
+			550: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 3,
+				slidesPerGroup: 1,
+				spaceBetween: 40,
+				navigation: {
+					nextEl: ".more-news__content .swiper-button-next",
+					prevEl: ".more-news__content .swiper-button-prev",
+				},
+			},
+		},
+	});
 
 	const reviewsSlider = new Swiper(".reviews__slider", {
 		slidesPerView: 1.2,
@@ -253,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			slidesPerView: 2,
 			slidesPerGroup: 1,
 			spaceBetween: 40,
-			initialSlide: 1
-		})
+			initialSlide: 1,
+		});
 	}
 });

@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	$(document).on("change", ".news__filter_form input", function(e) {
+	$(document).on("change", ".news__filter_form input", function (e) {
 		$(".news__filter_label").each((_, label) => {
 			$(label).removeClass("selected");
 		});
@@ -218,34 +218,31 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (e.target.checked) {
 			$(this).closest(".news__filter_label").addClass("selected");
 		}
-		$(".news__filter_form").submit()
+		$(".news__filter_form").submit();
 	});
 
 	if (this.location.search) {
-		const params = new URLSearchParams(this.location.search)
+		const params = new URLSearchParams(this.location.search);
 		console.log(params.get("category"));
 
 		$(".news__filter_label").each((_, label) => {
-
 			$(label).removeClass("selected");
 
 			if ($(label).children("input").attr("value") === params.get("category")) {
-				$(label).children("input").attr("checked", true)
-				$(label).addClass("selected")
+				$(label).children("input").attr("checked", true);
+				$(label).addClass("selected");
 			}
 		});
 	} else {
 		$(".news__filter_label").each((_, label) => {
-
 			$(label).removeClass("selected");
 
 			if ($(label).children("input").attr("value") === "") {
-				$(label).children("input").attr("checked", true)
-				$(label).addClass("selected")
+				$(label).children("input").attr("checked", true);
+				$(label).addClass("selected");
 			}
 		});
 	}
-	
 
 	loadScript(window.location.protocol + "//api-maps.yandex.ru/2.1/?lang=ru_RU", setMap);
 
@@ -288,9 +285,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	// 		map.style.width = "100%";
 	// 		map.style.height = mapHeight + "px";
 	// 	}
-		
-		
+
 	// }
+
+	$(".grid").masonry({
+		itemSelector: ".reviews__card",
+		gutter: 40,
+	});
 });
 
 function setMap() {
