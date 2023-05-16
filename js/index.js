@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+	// Init Swipers
+
+	initServSlider();
+	initPromoTitleSlider();
+	initPromoSlider();
+	initNewsSlider();
+	initMoreNewsSlider();
+	initReviewsSlider();
+	initTeamSlider();
+	initWorksSlider();
+
+	// 
+
 	$(document).on("click", ".header__search_form .search-btn", function (e) {
 		if (!$(".header__search_form").hasClass("active")) {
 			e.preventDefault();
@@ -41,14 +55,40 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
-	$(document).on("click", ".header__nav_item span", function () {
-		$("body").addClass("hidden");
-		// $(".popup").addClass("show");
-		$(".popup").css({ opacity: 1, visibility: "visible" });
-		setTimeout(() => {
-			$(".popup__menu").css({ transform: "translateX(0)" });
-		}, 300);
+	//  Popup Open
+
+	$(document).on("click", ".popup-open", function (e) {
+			e.preventDefault();
+			$("body").addClass("hidden");
+			$(".popup").css({ opacity: 1, visibility: "visible" });
+			setTimeout(() => {
+				$(".popup__menu").css({ transform: "translateX(0)" });
+			}, 300);
 	});
+
+	// Popup Close
+
+	$(document).on("click", ".popup", function (e) {
+		if (e.target.classList.contains("popup") || e.target.classList.contains("popup_close")) {
+			$("body").removeClass("hidden");
+			$(".popup__menu").css({ transform: "translateX(-100%)" });
+			setTimeout(() => {
+				$(".popup").css({ opacity: 0, visibility: "hidden" });
+			}, 500);
+		}
+
+		if (e.target.classList.contains("popup__more-btn")) {
+			const menuItem = e.target.closest(".popup__menu_item");
+
+			$(".popup__menu_item").each((_, item) => {
+				$(item).removeClass("active");
+			});
+
+			$(menuItem).addClass("active");
+		}
+	});
+
+	// Team slider Resize
 
 	if (document.querySelector(".team")) {
 		let padding = parseInt(window.getComputedStyle(document.querySelector(".team")).paddingLeft);
@@ -68,6 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	// Links Listeners
+
+	on("click", ".link", function(e){
+	    if (this.href == window.location.href) e.preventDefault();
+    });
+
+	// Reviews slider Resize
+
 	if (document.querySelector(".reviews")) {
 		let padding = parseInt(window.getComputedStyle(document.querySelector(".reviews")).paddingLeft);
 		let innerWidth = $(".reviews .container").width() * 0.75 + $(".reviews .container").offset().left - padding;
@@ -86,30 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	$(document).on("click", ".popup", function (e) {
-		if (e.target.classList.contains("popup") || e.target.classList.contains("popup_close")) {
-			$("body").removeClass("hidden");
-			// $(".popup").removeClass("show");
-			$(".popup__menu").css({ transform: "translateX(-100%)" });
-			setTimeout(() => {
-				$(".popup").css({ opacity: 0, visibility: "hidden" });
-			}, 500);
-		}
-
-		if (e.target.classList.contains("popup__more-btn")) {
-			const menuItem = e.target.closest(".popup__menu_item");
-
-			$(".popup__menu_item").each((_, item) => {
-				$(item).removeClass("active");
-			});
-
-			$(menuItem).addClass("active");
-		}
-	});
+	// Mobile menu open
 
 	$(document).on("click", ".burger-menu", function () {
 		$("body").addClass("hidden");
-		// $(".mobile").addClass("show");
 		$(".mobile").css({ opacity: 1, visibility: "visible" });
 		setTimeout(() => {
 			$(".mobile__menu").css({ transform: "translateX(0)" });
@@ -119,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	$(document).on("click", ".mobile", function (e) {
 		if (e.target.classList.contains("mobile") || e.target.classList.contains("mobile_close")) {
 			$("body").removeClass("hidden");
-			// $(".mobile").removeClass("show");
 			$(".mobile__menu").css({ transform: "translateX(-100%)" });
 			setTimeout(() => {
 				$(".mobile").css({ opacity: 0, visibility: "hidden" });
@@ -264,34 +291,42 @@ document.addEventListener("DOMContentLoaded", function () {
 	const scrollObserver = new IntersectionObserver(scrollCallback, scrollOptions);
 	scrollObserver.observe(document.querySelector(".obs-target"));
 
-	// if (document.querySelector(".contacts")) {
-	// 	const header = document.querySelectorAll(".header")[0];
-	// 	const contacts = document.querySelector(".map__contacts");
-	// 	const map = document.querySelector(".map");
-	// 	let mapHeight = contacts.offsetHeight;
-	// 	let mapWidth = window.innerWidth - document.querySelector(".map__contacts").offsetLeft - document.querySelector(".map__contacts").offsetWidth;
-	// 	map.style.width = mapWidth + "px";
-	// 	map.style.height = mapHeight + "px";
-	// 	console.log(mapHeight);
-	// 	if (window.innerWidth > 768) {
-	// 		window.addEventListener("resize", function(){
-	// 			mapHeight = contacts.offsetHeight;
-	// 			mapWidth =
-	// 				window.innerWidth - document.querySelector(".map__contacts").offsetLeft - document.querySelector(".map__contacts").offsetWidth;
-	// 			map.style.width = mapWidth + "px";
-	// 			map.style.height = mapHeight + "px";
-	// 		})
-	// 	} else {
-	// 		map.style.width = "100%";
-	// 		map.style.height = mapHeight + "px";
-	// 	}
+	if (document.querySelector(".reviews-inner__cards") && document.querySelector(".reviews__card")){
 
-	// }
+		const masonryOptions = {
+			itemSelector: ".reviews__card",
+			gutter: 40,
+		};
 
-	$(".grid").masonry({
-		itemSelector: ".reviews__card",
-		gutter: 40,
-	});
+		if (window.innerWidth < 991) {
+			masonryOptions.gutter = 20;
+		} else if (window.innerWidth < 768) {
+			masonryOptions.gutter = 10;
+		} else {
+			masonryOptions.gutter = 40;
+		}
+
+		$(".grid").masonry(masonryOptions);
+
+		window.addEventListener("resize", function (e) {
+			if (window.innerWidth < 991) {
+				masonryOptions.gutter = 20;
+			} else if (window.innerWidth < 768) {
+				masonryOptions.gutter = 20;
+			} else {
+				masonryOptions.gutter = 40;
+			}
+		});
+
+		$(document).on("click", ".reviews__more_btn", function() {
+			$(".reviews-inner__container").css("height", "auto");
+			$(this).css("display", "none");
+			$(".reviews-inner__cards-bottom").css("display", "none");
+		});
+
+	}
+
+	
 });
 
 function setMap() {

@@ -233,7 +233,7 @@
             <section class="reviews-inner gray">
                 <div class="container">
                     <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
+                        <ul class="breadcrumbs__list flex wrap">
                             <li class="breadcrumbs__item">
                                 <a href="/" class="breadcrumbs__link">Главная страница</a>
                             </li>
@@ -244,11 +244,12 @@
                     </div>
 
                     <div class="reviews-inner__content">
-                        <div class="reviews-inner__title flex">
+                        <div class="reviews-inner__title flex wrap">
                             <h2 class="h2">Отзывы</h2>
-                            <button class="reviews-inner__new btn btn-yell">Оставить свой отзыв</button>
+                            <button class="reviews-inner__new btn btn-yell" data-fancybox data-src="#review__form">Оставить свой отзыв</button>
                         </div>
-                        <div class="reviews-inner__cards grid">
+                        <div class="reviews-inner__container">
+                            <div class="reviews-inner__cards grid">
                             <div class="reviews-inner__card reviews__card dark-gray">
                                 <div class="reviews__card_date-row flex">
                                     <div class="reviews__card_date">17 марта 2022</div>
@@ -761,6 +762,10 @@
                             </div>
                             <div class="reviews-inner__cards_right"></div>
                         </div>
+
+                        <div class="reviews-inner__cards-bottom"></div>
+                        </div>
+                        <div class="reviews__more_btn btn btn-yell">Показать ещё </div>
                     </div>
                 </div>
             </section>
@@ -768,28 +773,41 @@
 
             <section class="recall">
                 <div class="container">
-
-                    <form action="#" class="recall__form">
-                        <div class="recall__form_title">Нужна консультация?</div>
-                        <div class="recall__form_subtitle">Оставьте заявку и наш менеджер свяжется с вами в течение
-                            <span>15 минут</span>
-                        </div>
-                        <label class="recall__form_label">
-                            <input type="text" name="name" placeholder="Ваше имя">
-                            <span>*</span>
-                        </label>
-                        <label class="recall__form_label">
-                            <input type="tel" name="phone" placeholder="Ваш телефон">
-                            <span>*</span>
-                        </label>
-                        <div class="recall__form_control flex">
-                            <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
-                            <label class="recall__form_agree">
-                                <input type="checkbox" name="agree" checked>
-                                <a href="policy.html">Политика конфиденциальности</a>
+                    <div class="recall__form">
+                        <form action="?" method="post" class="form_content">
+                            <div class="recall__form_title">Нужна консультация?</div>
+                            <div class="recall__form_subtitle">Оставьте заявку и наш менеджер свяжется с вами в течение
+                                <span>15 минут</span>
+                            </div>
+                            <label class="recall__form_label">
+                                <input type="text" name="name" placeholder="Ваше имя">
+                                <span>*</span>
                             </label>
+                            <label class="recall__form_label">
+                                <input type="tel" name="phone" placeholder="Ваш телефон">
+                                <span>*</span>
+                            </label>
+                            <div class="recall__form_control flex">
+                                <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
+                                <label class="recall__form_agree">
+                                    <input type="checkbox" name="agree" checked>
+                                    <a href="policy.html">Политика конфиденциальности</a>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="form__success ">
+                            <div class="form__success_img">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13" cy="13" r="13" fill="#EFD445"/>
+                                    <path d="M7.80005 13.4333L11.7 17.3333L19.9334 9.09998" stroke="#303941" stroke-width="2"/>
+                                </svg>
+                                
+                            </div>
+                            <h3 class="h3">Данные успешно отправлены</h3>
+                                <p class="text">Наш менеджер свяжется с вами в
+                                    ближайшее время</p>
                         </div>
-                    </form>
+                    </div>
                     <div class="recall__img" style="background: url(img/promo.png);">
                         <img src="img/recall-man.png" alt="">
                     </div>
@@ -3101,7 +3119,7 @@
             <div id="recall" class="modal__content">
                 <div style="background: url(img/modal-img.png);" class="modal__img"></div>
                 <div class="modal__form">
-                    <form class="form_content">
+                    <form class="form_content" method="post" accept="?">
                         <div class="recall__form_title">Оставить заявку</div>
                         <label class="recall__form_label">
                             <input type="text" name="name" placeholder="Ваше имя">
@@ -3111,7 +3129,7 @@
                             <input type="tel" name="phone" placeholder="Ваш телефон">
                             <span>*</span>
                         </label>
-                        <div class="recall__form_control flex">
+                        <div class="recall__form_control flex wrap">
                             <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
                             <label class="recall__form_agree">
                                 <input type="checkbox" name="agree" checked>
@@ -3119,13 +3137,25 @@
                             </label>
                         </div>
                     </form>
+                    <div class="form__success ">
+                        <div class="form__success_img">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13" cy="13" r="13" fill="#EFD445"/>
+                                <path d="M7.80005 13.4333L11.7 17.3333L19.9334 9.09998" stroke="#303941" stroke-width="2"/>
+                            </svg>
+                            
+                        </div>
+                        <h3 class="h3">Данные успешно отправлены</h3>
+                            <p class="text">Наш менеджер свяжется с вами в
+                                ближайшее время</p>
+                    </div>
                 </div>
             </div>
 
             <div id="request" class="modal__content">
                 <div style="background: url(img/modal-img.png);" class="modal__img"></div>
                 <div class="modal__form">
-                    <form class="form_content">
+                    <form class="form_content" method="post" accept="?">
                         <div class="recall__form_title">Оставить заявку</div>
                         <label class="recall__form_label">
                             <input type="text" name="name" placeholder="Ваше имя">
@@ -3139,7 +3169,7 @@
                             <textarea rows="4" name="request" placeholder="Введите Ваш вопрос"></textarea>
                             <span>*</span>
                         </label>
-                        <div class="recall__form_control flex">
+                        <div class="recall__form_control flex wrap">
                             <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
                             <label class="recall__form_agree">
                                 <input type="checkbox" name="agree" checked>
@@ -3147,6 +3177,63 @@
                             </label>
                         </div>
                     </form>
+                    <div class="form__success ">
+                        <div class="form__success_img">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13" cy="13" r="13" fill="#EFD445"/>
+                                <path d="M7.80005 13.4333L11.7 17.3333L19.9334 9.09998" stroke="#303941" stroke-width="2"/>
+                            </svg>
+                            
+                        </div>
+                        <h3 class="h3">Данные успешно отправлены</h3>
+                            <p class="text">Наш менеджер свяжется с вами в
+                                ближайшее время</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="review__form" class="modal__content">
+                <div style="background: url(img/modal-img.png);" class="modal__img"></div>
+                <div class="modal__form">
+                    <form class="form_content" enctype="multipart/form-data" method="post" accept="?">
+                        <div class="recall__form_title">Оставить заявку</div>
+                        <label class="recall__form_label">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <span>*</span>
+                        </label>
+                        <label class="recall__form_label">
+                            <input type="tel" name="phone" placeholder="Ваш телефон">
+                            <span>*</span>
+                        </label>
+                        <label class="recall__form_label">
+                            <textarea rows="4" name="request" placeholder="Введите Ваш отзыв"></textarea>
+                            <span>*</span>
+                        </label>
+
+                        <label class="recall__form_label">
+                            <input type="file" name="image" multiple accept=".jpg,.jpeg,.png">
+                            
+                        </label>
+                        <div class="recall__form_control flex wrap">
+                            <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
+                            <label class="recall__form_agree">
+                                <input type="checkbox" name="agree" checked>
+                                <a href="policy.html">Политика конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="form__success ">
+                        <div class="form__success_img">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13" cy="13" r="13" fill="#EFD445"/>
+                                <path d="M7.80005 13.4333L11.7 17.3333L19.9334 9.09998" stroke="#303941" stroke-width="2"/>
+                            </svg>
+                            
+                        </div>
+                        <h3 class="h3">Данные успешно отправлены</h3>
+                            <p class="text">Наш менеджер свяжется с вами в
+                                ближайшее время</p>
+                    </div>
                 </div>
             </div>
 

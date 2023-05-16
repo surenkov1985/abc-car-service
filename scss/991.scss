@@ -4,6 +4,29 @@
         background-position: 0px !important;
         background-size: cover !important;
 
+        &.services-page {
+            padding: 150px 45px 60px;
+
+            & .intro {
+                &__links {
+                    gap: 20px 40px;
+                }
+
+                &__recall {
+                    margin-top: 70px;
+                }
+
+                &__link {
+                    gap: 12px;
+
+                    &_arr {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+
         &__content {
             width: 100%;
         }
@@ -49,11 +72,16 @@
         }
     }
 
+    .swiper-pagination {
+        margin-bottom: 15px;
+    }
+
     .services {
-        padding: 90px 45px 90px;
+        padding: 110px 45px 90px;
 
         &__top {
-            padding: 0px 0 250px
+            padding: 110px 45px 250px;
+            margin-top: -110px;
         }
 
         &__bottom {
@@ -285,6 +313,273 @@
                 width: 50px;
                 height: 50px;
             }
+        }
+    }
+
+    .when {
+        padding: 100px 45px 90px;
+        &__content {
+            &_text {
+                width: 100%;
+            }
+        }
+
+        &__list {
+            margin-top: 80px;
+        }
+    }
+
+    .stages {
+        padding: 70px 45px;
+
+        &__list {
+            gap: 30px;
+        }
+
+        &__item {
+            width: 30%;
+
+            &_content {
+                padding: 30px 20px;
+            }
+            &_text {
+                font-size: 18px;
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .which {
+        padding: 80px 45px;
+    }
+
+    .price {
+        padding: 70px 45px 80px;
+
+        & .container {
+            row-gap: 30px;
+        }
+
+        &__title {
+            width: 100%;
+        }
+
+        &.column {
+            padding-bottom: 80px;
+        }
+
+        &.column .container .price__title {
+            width: 100%;
+        }
+
+        &__offer {
+            margin-top: 20px;
+        }
+
+        &__list {
+            width: 100%;
+        }
+    }
+
+    .about {
+        padding: 150px 45px 65px;
+
+        &__content {
+            margin-top: 40px;
+        }
+
+        &__desc {
+            width: 100%;
+            gap: 40px;
+        }
+
+        &__img {
+            height: 200px;
+        }
+
+        &__form {
+            display: none;
+        }
+    }
+
+    .sign {
+        padding: 75px 45px 80px;
+
+        &__list {
+            gap: 30px 25px;
+            justify-content: center;
+        }
+
+        &__item {
+            padding: 25px 25px 90px;
+            width: 30%;
+        }
+
+        &__correct {
+            margin-top: 80px;
+            gap: 40px;
+
+            &_list {
+                width: 50%;
+
+                & li {
+                    align-items: flex-start;
+                }
+            }
+
+            &_title {
+                line-height: 120%;
+            }
+        }
+    }
+
+    .why {
+        padding: 50px 45px;
+
+        &__content {
+            padding: 80px 45px 90px 45px;
+            margin-left: 0;
+            // margin-right: -45px;
+            width: 100%;
+        }
+
+        &__text {
+            margin-top: 50px;
+        }
+    }
+
+    .contacts {
+
+        & .map__contacts_item {
+            width: 100%;
+        }
+        &__content {
+            
+                
+                
+            
+        }
+    }
+
+    .advs {
+        padding: 90px 45px ;
+
+        & .when {
+            &__list {
+                justify-content: center;
+                row-gap: 20px;
+            }
+
+            &__item {
+                width: 33%;
+            }
+        }
+
+        &__img {
+            min-width: 200px;
+            height: 200px;
+        }
+
+        & .text {
+            width: 90%;
+            margin-top: 60px;
+        }
+    }
+
+    .examples {
+        padding: 80px 45px;
+
+        &__content {
+            margin-top: 50px;
+        }
+
+        &__sliders {
+            margin-top: 45px;
+        }
+    }
+
+    .news {
+        padding: 150px 45px 65px;
+
+        &__filter {
+            margin-top: 50px;
+        }
+
+        &__cards {
+            margin-top: 50px;
+            grid-gap: 30px;
+        }
+
+        &__more_btn {
+            margin-top: 80px;
+        }
+    }
+
+    .reviews-inner {
+        padding: 150px 45px 65px;
+
+        &__cards {
+            margin-top: 45px;
+        }
+
+        &__card {
+            width: calc(50% - 10px);
+            padding: 30px 30px 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .news-detail {
+        padding: 150px 45px 80px;
+
+        &__date-row {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__banner {
+            margin-top: 50px;
+        }
+
+        &__travel {
+            margin-top: 70px;
+
+            &-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+            }
+        }
+
+        &__service {
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        &__slider {
+            &-container {
+                margin: 70px 0;
+            }
+
+            & .swiper-pagination {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .more-news {
+        padding: 70px 45px 80px;
+    }
+
+    .works {
+        padding: 80px 45px;
+
+        &__slide {
+            grid-gap: 30px;
         }
     }
 

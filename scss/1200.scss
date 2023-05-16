@@ -1,3 +1,19 @@
+@media (max-width:1500px) {
+    .contacts {
+        padding: 110px 0 0;
+        &__content {
+            width: 45.5%;
+            margin-left: 0;
+            
+            & .map {
+                &__contacts {
+                    padding: 50px 60px 130px 45px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:1300px) {
     .header {
         &__nav {
@@ -44,6 +60,16 @@
         padding-top: 200px;
         background-position: 200px!important;
 
+        &.services-page {
+            padding: 160px 45px 60px;
+
+            & .intro {
+                &__links {
+                    gap: 20px 50px;
+                }
+            }
+        }
+
         &__content {
             width: 65%;
         }
@@ -67,21 +93,26 @@
     }
 
     .services {
+        padding: 120px 45px 110px;
         &__top {
-            padding: 120px 45px 300px
+            padding: 120px 45px 300px;
+            margin-top: -120px;
         }
 
         &__bottom {
-            padding: 300px 45px 110px;
+            padding: 300px 45px 10px;
         }
 
         &__subtitle {
             margin-top: 90px;
         }
-        &__promo_card{
+        &__promo {
+            left: 0;
+            &_card{
+                left: 0;
             &-content {
             padding: 60px 80px;
-        }
+        }}
         &-title {
             max-width: 50%;
             margin-top: 0;
@@ -173,6 +204,111 @@
         &__scls {
             margin-left: auto;
         }
+    }
+
+    .when {
+        padding: 110px 45px 100px;
+
+        &__list {
+            margin-top: 150px;
+        }
+    }
+
+    .stages {
+        padding: 90px 45px;
+
+        &__list {
+            gap: 30px;
+        }
+
+        &__item {
+
+            &_content {
+                padding: 40px 25px;
+            }
+            &_text {
+                font-size: 18px;
+                margin-top: 120px;
+            }
+        }
+    }
+
+    .which {
+        padding: 90px 45px;
+    }
+
+    .price {
+        padding: 80px 45px 90px;
+
+        &__list {
+            width: 65%;
+        }
+    }
+
+    .about {
+        padding: 160px 45px 70px;
+
+        &__content {
+            gap: 50px;
+        }
+
+        &__desc {
+            width: 66%;
+        }
+    }
+
+    .advs {
+        padding: 120px 45px 100px;
+
+        & .when {
+            &__list {
+                justify-content: center;
+                row-gap: 20px;
+            }
+
+            &__item {
+                width: 33%;
+            }
+        }
+
+        &__img {
+            min-width: 250px;
+            height: 250px;
+        }
+
+        & .text {
+            width: 80%;
+        }
+    }
+
+    .examples {
+        padding: 100px 45px 90px;
+    }
+
+    .contacts {
+        &__content {
+            & .map {
+                &__contacts {
+                    padding: 50px 40px 130px 45px;
+                }
+            }
+        }
+    }
+
+    .news, .reviews-inner {
+        padding: 160px 45px 75px;
+    }
+
+    .news-detail {
+        padding: 160px 45px 90px;
+    }
+
+    .more-news {
+        padding: 80px 45px 90px;
+    }
+
+    .works {
+        padding: 90px 45px;
     }
 
     .footer {

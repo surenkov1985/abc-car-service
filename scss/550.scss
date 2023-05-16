@@ -38,6 +38,35 @@
     .intro {
         padding: 150px 20px 50px;
 
+        &.services-page {
+            padding: 120px 20px 50px;
+
+            & .intro {
+
+                &__recall {
+                    margin-top: 35px;
+                }
+                &__links {
+                    gap: 12px 30px;
+                }
+
+                &__link {
+                    gap: 8px;
+                    font-size: 14px;
+
+                    &_arr {
+                        width: 26px;
+                        height: 26px;
+
+                        & svg {
+                            width: 14px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
         &__subtitle {
             font-size: 16px;
 
@@ -63,13 +92,18 @@
                 }
             }
         }
+
+        &__tagline {
+            margin-top: 30px;
+        }
     }
 
     .services {
         padding: 40px 20px 40px;
 
         &__top {
-            padding: 0px 0px 180px;
+            padding: 40px 20px 180px;
+            margin: -40px -20px 0;
         }
 
         &__bottom {
@@ -78,7 +112,8 @@
 
         &__promo {
             &_card {
-                width: calc(100% - 40px);
+                // width: calc(100% - 40px);
+                width: 100%;
 
                 &-content {
                     padding: 20px 30px;
@@ -95,19 +130,6 @@
 
         &__more {
             display: none;
-            // font-size: 15px;
-            // gap: 10px;
-
-            // & span {
-
-            //     width: 26px;
-            //     height: 26px;
-
-            //     & svg {
-            //         width: 10px;
-            //         height: 10px;
-            //     }
-            // }
         }
 
         &__items {
@@ -397,7 +419,342 @@
 
         &__recall {
             margin-left: auto;
-            // display: none;
+        }
+    }
+
+    .when {
+        padding: 40px 20px;
+
+        &__content {
+            gap: 25px;
+            &_title {
+                width: 100%;
+            }
+        }
+
+        &__list {
+            margin-top: 40px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+    }
+
+    .stages {
+        padding: 40px 20px;
+
+        &__list {
+            margin-top: 40px;
+        }
+
+        &__item {
+            width: 100%;
+
+            &_content {
+                padding: 20px 20px;
+            }
+            &_text {
+                font-size: 18px;
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .which {
+        padding: 40px 20px;
+    }
+
+    .price {
+        padding: 40px 20px 40px;
+        &.column {
+            padding-bottom: 40px;
+        }
+
+        & .container {
+            gap: 20px;
+        }
+
+        &__list {
+            gap: 15px;
+        }
+
+        &__item {
+            padding: 20px 15px;
+
+            &_text {
+                font-size: 15px;line-height: 18px;
+            }
+        }
+    }
+
+    .about {
+        padding: 120px 20px 40px;
+
+        &__img {
+            height: 160px;
+
+            & svg {
+                bottom: -25%;
+            }
+        }
+    }
+
+    .sign {
+        padding: 40px 20px;
+
+        &__title {
+            gap: 40px;
+
+            & .btn {
+                display: none;
+            }
+        }
+
+        &__list {
+            gap: 15px;
+        }
+
+        &__item {
+            padding: 20px 20px 60px;
+
+            &_text {
+                font-size: 15px;
+                line-height: 120%;
+            }
+
+            &_ind {
+                font-size: 50px;
+            }
+        }
+
+        &__correct {
+            margin-top: 40px;
+
+            &_img.false {
+                margin-top: 20px;
+            }
+
+            &_list {
+                & ul {
+                    margin-top: 20px;
+                }
+
+                & li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .why {
+        padding: 40px 20px;
+
+        &__content {
+            padding: 40px 20px;
+        }
+
+        &__text {
+            margin-top: 20px;
+        }
+
+        & .when__item {
+            width: 100%;
+        }
+    }
+
+    .contacts {
+        padding-top: 90px;
+        & .map {
+            width: 100%;
+            height: 250px;
+
+            &__contacts {
+                padding: 40px 20px 40px;
+
+                & .breadcrumbs {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .advs {
+        padding: 40px 20px;
+
+        & .when {
+            &__list {
+                justify-content: center;
+                row-gap: 20px;
+            }
+
+            &__item {
+                width: 100%;
+            }
+        }
+
+        &__img {
+            display: none;
+            min-width: 75px;
+            height: 75px;
+        }
+
+        & .text {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    .examples {
+        padding: 40px 20px;
+
+        &__content {
+            margin-top: 30px;
+        }
+
+        &__sliders {
+            margin-top: 25px;
+        }
+    }
+
+    .news {
+        padding: 120px 20px 40px;
+
+        & .breadcrumbs {
+            margin-bottom: 40px;
+        }
+
+        &__filter {
+            margin-top: 30px;
+        }
+
+        &__cards {
+            margin-top: 30px;
+            grid-gap: 20px;
+        }
+
+        &__more_btn {
+            margin-top: 50px;
+        }
+    }
+
+    .news-detail {
+        padding: 120px 20px 40px;
+
+        & .breadcrumbs {
+            margin-bottom: 40px;
+        }
+
+        &__date-row {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+
+        &__rating {
+            & svg {
+                width: 25px;
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 130%;
+        }
+
+        &__banner {
+            margin-top: 30px;
+        }
+
+        &__travel {
+            margin-top: 30px;
+
+            &-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        &__service {
+            gap: 10px;
+        }
+
+        &__slider {
+            &-container {
+                margin: 40px 0;
+            }
+
+            & .swiper-pagination {
+                margin-top: 30px;
+            }
+        }
+
+        &__work {
+            &_content {
+                flex-direction: column-reverse;
+                gap: 20px;
+            }
+        }
+
+        &__addr {
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        & .h3 {
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            & ul {
+                padding-left: 40px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        }
+
+        & blockquote {
+            margin: 35px 0;
+            padding: 20px 20px;
+            gap: 15px;
+            font-size: 16px;
+        }
+    }
+
+    .more-news {
+        padding: 40px 20px;
+    }
+
+    .works {
+        padding: 40px 20px 50px;
+
+        &__slider {
+            margin-top: 40px;
+        }
+
+        &__slide {
+            grid-gap: 15px;
+        }
+
+
+    }
+
+    .reviews-inner {
+        padding: 120px 20px 50px;
+
+        & .breadcrumbs {
+            margin-bottom: 40px;
+        }
+
+        &__cards {
+            margin-top: 30px;
+        }
+
+        &__card {
+            padding: 30px 20px 40px;
+            margin-bottom: 20px;
+            width: 100%;
         }
     }
 
@@ -533,5 +890,16 @@
         width: 100%;
     }
 
+    .about {
+        padding: 120px 20px 40px;
+
+        &__img {
+            height: 160px;
+
+            & svg {
+                bottom: -35%;
+            }
+        }
+    }
 
 }
