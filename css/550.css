@@ -21,18 +21,23 @@
   .h2 {
     font-size: 22px;
   }
+  .swiper {
+    overflow: visible;
+  }
   .sm-btn {
     padding: 7px 10px;
     font-size: 14px;
   }
   .intro {
-    padding: 150px 20px 50px;
+    padding: 110px 20px 50px;
+    max-height: 650px;
+    min-height: 650px;
   }
   .intro.services-page {
     padding: 120px 20px 50px;
   }
   .intro.services-page .intro__recall {
-    margin-top: 35px;
+    margin-top: 0px;
   }
   .intro.services-page .intro__links {
     gap: 12px 30px;
@@ -46,6 +51,33 @@
     height: 26px;
   }
   .intro.services-page .intro__link_arr svg {
+    width: 14px;
+    height: 16px;
+  }
+  .intro.about-page {
+    padding: 150px 20px 50px;
+  }
+  .intro.about-page .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+  .intro.about-page .intro__recall {
+    margin-top: 0px;
+  }
+  .intro.about-page .intro__links {
+    gap: 12px 30px;
+  }
+  .intro.about-page .intro__link {
+    gap: 8px;
+    font-size: 14px;
+  }
+  .intro.about-page .intro__link_arr {
+    width: 26px;
+    height: 26px;
+  }
+  .intro.about-page .intro__link_arr svg {
     width: 14px;
     height: 16px;
   }
@@ -112,7 +144,7 @@
     margin-top: 40px;
   }
   .services__advantages {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 40px;
   }
   .services__advantages_item {
@@ -448,6 +480,18 @@
   .advs {
     padding: 40px 20px;
   }
+  .advs__models_price {
+    padding: 20px;
+  }
+  .advs__models_price-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advs__models_price-name {
+    margin-bottom: 10px;
+  }
   .advs .when__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -472,8 +516,11 @@
   .examples__content {
     margin-top: 30px;
   }
-  .examples__sliders {
-    margin-top: 25px;
+  .examples__tabs {
+    margin-bottom: 25px;
+  }
+  .breadcrumbs {
+    margin-bottom: 40px;
   }
   .news {
     padding: 120px 20px 40px;

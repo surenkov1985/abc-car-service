@@ -5,6 +5,12 @@ async function loadScript(src, func = false) {
 	if (func) script.onload = () => func();
 }
 
+function formatValueInput(elem, regexp) {
+	let str = elem.value.replace(regexp, "");
+
+	return str;
+}
+
 function phoneMask(e) {
     let key = e.key;
 	let testReg = /[(\+\d\s\(\d\d\d\)\s\d\d\d-\d\d-\d\d)(\d\s\(\d\d\d\)\s\d\d\d-\d\d-\d\d)]/gi;

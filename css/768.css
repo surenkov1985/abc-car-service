@@ -36,10 +36,26 @@
     padding: 8px 20px;
   }
   .intro {
-    padding: 150px 30px 60px;
+    padding: 120px 30px 60px;
+    max-height: 650px;
+    min-height: 600px;
+  }
+  .intro__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
   }
   .intro.services-page {
     padding: 140px 30px 60px;
+    max-height: 650px !important;
+    min-height: 600px;
+  }
+  .intro.services-page .intro__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
   }
   .intro.services-page__recall {
     margin-top: 50px;
@@ -52,6 +68,31 @@
     font-size: 16px;
   }
   .intro.services-page .intro__link_arr {
+    width: 32px;
+    height: 32px;
+  }
+  .intro.about-page {
+    padding: 190px 30px 60px;
+    max-height: 650px !important;
+    min-height: 600px;
+  }
+  .intro.about-page .intro__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+  .intro.about-page__recall {
+    margin-top: 50px;
+  }
+  .intro.about-page .intro__links {
+    gap: 15px 30px;
+  }
+  .intro.about-page .intro__link {
+    gap: 10px;
+    font-size: 16px;
+  }
+  .intro.about-page .intro__link_arr {
     width: 32px;
     height: 32px;
   }
@@ -162,6 +203,9 @@
   }
   .promotion__title_slide {
     font-size: 26px;
+  }
+  .promotion__cards {
+    grid-gap: 20px;
   }
   .promotion__card_content {
     padding: 30px 20px;
@@ -278,39 +322,6 @@
   }
   .questions__point.active .questions__point_text {
     margin-top: 30px;
-  }
-  .section_map {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    height: auto;
-  }
-  .section_map .container {
-    position: static;
-  }
-  .map {
-    position: static;
-    height: 500px;
-  }
-  .map__contacts {
-    background: none;
-    max-width: 100%;
-    width: 100%;
-    padding: 40px 30px;
-  }
-  .map__contacts_title {
-    margin-bottom: 30px;
-  }
-  .map__contacts_addr-text {
-    font-size: 18px;
-  }
-  .map__contacts_items {
-    margin-top: 30px;
-  }
-  .map__contacts_line {
-    margin-top: 30px;
-    margin-bottom: 30px;
   }
   .feedback {
     padding: 30px 30px;
@@ -469,6 +480,16 @@
   .advs {
     padding: 70px 30px;
   }
+  .advs__models_tab {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .advs__models_price {
+    padding: 20px 30px;
+  }
+  .advs__models_price-img {
+    display: none;
+  }
   .advs .when__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -492,8 +513,8 @@
   .examples__content {
     margin-top: 40px;
   }
-  .examples__sliders {
-    margin-top: 35px;
+  .examples__tabs {
+    margin-bottom: 35px;
   }
   .news {
     padding: 140px 30px 50px;

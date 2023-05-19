@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     min-width: 340px;
@@ -143,8 +147,12 @@ a[href*="tel"] {
 
     &:hover {
         box-shadow: 0px 3px 4px 1px rgba(243, 243, 243, 0.2);
-        transform: scale(1.03);
+        transform: scale(101%);
 
+    }
+
+    &:active {
+        transform: scale(1);
     }
 
     &-green {
@@ -163,6 +171,24 @@ a[href*="tel"] {
     border-radius: 40px;
 }
 
+.animate {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 1s;
+  }
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.animate-right {
+    opacity: 0;
+    transform: translatex(250px);
+    transition: all 1s;
+  }
+.animate-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .h1 {
     font-family: var(--title-font);
@@ -216,6 +242,10 @@ a[href*="tel"] {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.swiper {
+    width: 100%;
 }
 
 .swiper-pagination {

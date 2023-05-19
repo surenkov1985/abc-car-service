@@ -29,6 +29,10 @@
     .h2 {
         font-size: 22px;
     }
+    .swiper {
+        overflow: visible;
+    }
+
 
     .sm-btn {
         padding: 7px 10px;
@@ -36,7 +40,9 @@
     }
 
     .intro {
-        padding: 150px 20px 50px;
+        padding: 110px 20px 50px;
+        max-height: 650px;
+        min-height: 650px;
 
         &.services-page {
             padding: 120px 20px 50px;
@@ -44,7 +50,43 @@
             & .intro {
 
                 &__recall {
-                    margin-top: 35px;
+                    margin-top: 0px;
+                }
+                &__links {
+                    gap: 12px 30px;
+                }
+
+                &__link {
+                    gap: 8px;
+                    font-size: 14px;
+
+                    &_arr {
+                        width: 26px;
+                        height: 26px;
+
+                        & svg {
+                            width: 14px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.about-page {
+            padding: 150px 20px 50px;
+
+            & .container {
+                justify-content: center;
+                gap: 40px;
+            }
+
+
+            & .intro {
+
+                
+                &__recall {
+                    margin-top: 0px;
                 }
                 &__links {
                     gap: 12px 30px;
@@ -152,7 +194,7 @@
         }
 
         &__advantages {
-            margin-top: 0px;
+            margin-top: 30px;
             margin-bottom: 40px;
 
             &_item {
@@ -582,6 +624,21 @@
     .advs {
         padding: 40px 20px;
 
+        &__models {
+
+            &_price {
+                padding: 20px;
+
+                &-items {
+                    flex-direction: column;
+                }
+
+                &-name {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
         & .when {
             &__list {
                 justify-content: center;
@@ -612,9 +669,13 @@
             margin-top: 30px;
         }
 
-        &__sliders {
-            margin-top: 25px;
+        &__tabs {
+            margin-bottom: 25px;
         }
+    }
+
+    .breadcrumbs {
+        margin-bottom: 40px;
     }
 
     .news {

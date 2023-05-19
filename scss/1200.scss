@@ -70,6 +70,16 @@
             }
         }
 
+        &.about-page {
+            padding: 250px 45px 60px;
+
+            & .intro {
+                &__links {
+                    gap: 20px 50px;
+                }
+            }
+        }
+
         &__content {
             width: 65%;
         }
@@ -169,14 +179,14 @@
     .reviews {
         &__content {
             width: 75%;
-            margin-left: 30px;
+            margin-left: 65px;
         }
     }
 
     .team {
         &__content {
             width: 75%;
-            margin-left: 30px;
+            margin-left: 80px;
         }
     }
 
@@ -259,6 +269,14 @@
 
     .advs {
         padding: 120px 45px 100px;
+
+        &__models {
+            margin-bottom: 80px;
+
+            &_tab {
+                font-size: 18px;
+            }
+        }
 
         & .when {
             &__list {

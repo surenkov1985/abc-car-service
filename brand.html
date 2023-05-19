@@ -24,7 +24,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="libs/fancybox/style.css">
-    <link rel="stylesheet" href="libs/swiperjs/style.css">
+    <link rel="stylesheet" href="libs/swiperjs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/vars.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -255,7 +255,7 @@
                     </div>
                     <div class="intro__links flex wrap">
                         <div class="services__item">
-                            <a href="#advs" class="intro__link">
+                            <a href="#advs" class="intro__link" data-href="advs">
                                 Наши преимущества
                                 <span class="intro__link_arr">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -268,7 +268,7 @@
 
                         </div>
                         <div class="services__item">
-                            <a href="#services" class="intro__link">
+                            <a href="#services" class="intro__link" data-href="services">
                                 Какие услуги по предоставляем
                                 <span class="intro__link_arr"><svg width="16" height="17" viewBox="0 0 16 17"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +279,7 @@
                             </a>
                         </div>
                         <div class="services__item">
-                            <a href="#examples" class="intro__link">
+                            <a href="#examples" class="intro__link" data-href="examples">
                                 Примеры работ
                                 <span class="intro__link_arr"><svg width="16" height="17" viewBox="0 0 16 17"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,6 +305,183 @@
             </section>
             <section class="advs dark-gray" id="advs">
                 <div class="container">
+                    <div class="advs__models"><div class="advs__models_tabs flex wrap">
+                        <button class="advs__models_tab active" data-target="tab1">BMW X6</button>
+                        <button class="advs__models_tab" data-target="tab2">BMW X5</button>
+                        <button class="advs__models_tab" data-target="tab3">BMW X3</button>
+                        <button class="advs__models_tab" data-target="tab4">BMW 5 серии</button>
+                        <button class="advs__models_tab" data-target="tab5">BMW 3 серии</button>
+                        <button class="advs__models_tab" data-target="tab6">BMW 2 серии</button>
+                    </div>
+                    <div class="advs__models_price gray flex active" id="tab1">
+                        <div class="advs__models_price-content ">
+                            <div class="advs__models_price-items flex wrap">
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена масла</div>
+                                    <div class="advs__models_price-value">от 5400 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена Колодок</div>
+                                    <div class="advs__models_price-value">от 2490 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                            </div>
+                            <div class="advs__models_price-recall">
+                                <div class="recall__btn btn btn-yell" data-fancybox data-src="#recall">Записаться на ремонт BMW X6</div>
+                            </div>
+                        </div>
+                        <div class="advs__models_price-img">
+                            <img src="img/x6.png" alt="x6">
+                        </div>
+                    </div>
+                    <div class="advs__models_price gray" id="tab2">
+                        <div class="advs__models_price-content ">
+                            <div class="advs__models_price-items flex">
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена масла</div>
+                                    <div class="advs__models_price-value">от 3400 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена Колодок</div>
+                                    <div class="advs__models_price-value">от 3590 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 8900 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 8900 ₽</div>
+                                </div>
+                            </div>
+                            <div class="advs__models_price-recall">
+                                <div class="recall__btn btn btn-yell" data-fancybox data-src="#recall">Записаться на ремонт BMW X6</div>
+                            </div>
+                        </div>
+                        <div class="advs__models_price-img">
+                            <img src="img/x6.png" alt="x6">
+                        </div>
+                    </div>
+                    <div class="advs__models_price gray" id="tab3">
+                        <div class="advs__models_price-content ">
+                            <div class="advs__models_price-items flex">
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена масла</div>
+                                    <div class="advs__models_price-value">от 5400 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена Колодок</div>
+                                    <div class="advs__models_price-value">от 2490 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                            </div>
+                            <div class="advs__models_price-recall">
+                                <div class="recall__btn btn btn-yell" data-fancybox data-src="#recall">Записаться на ремонт BMW X6</div>
+                            </div>
+                        </div>
+                        <div class="advs__models_price-img">
+                            <img src="img/x6.png" alt="x6">
+                        </div>
+                    </div>
+                    <div class="advs__models_price gray" id="tab4">
+                        <div class="advs__models_price-content ">
+                            <div class="advs__models_price-items flex">
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена масла</div>
+                                    <div class="advs__models_price-value">от 5400 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена Колодок</div>
+                                    <div class="advs__models_price-value">от 2490 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                            </div>
+                            <div class="advs__models_price-recall">
+                                <div class="recall__btn btn btn-yell" data-fancybox data-src="#recall">Записаться на ремонт BMW X6</div>
+                            </div>
+                        </div>
+                        <div class="advs__models_price-img">
+                            <img src="img/x6.png" alt="x6">
+                        </div>
+                    </div>
+                    <div class="advs__models_price gray" id="tab5">
+                        <div class="advs__models_price-content ">
+                            <div class="advs__models_price-items flex">
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена масла</div>
+                                    <div class="advs__models_price-value">от 5400 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена Колодок</div>
+                                    <div class="advs__models_price-value">от 2490 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                            </div>
+                            <div class="advs__models_price-recall">
+                                <div class="recall__btn btn btn-yell" data-fancybox data-src="#recall">Записаться на ремонт BMW X6</div>
+                            </div>
+                        </div>
+                        <div class="advs__models_price-img">
+                            <img src="img/x6.png" alt="x6">
+                        </div>
+                    </div>
+                    <div class="advs__models_price gray" id="tab6">
+                        <div class="advs__models_price-content ">
+                            <div class="advs__models_price-items flex">
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена масла</div>
+                                    <div class="advs__models_price-value">от 5400 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Замена Колодок</div>
+                                    <div class="advs__models_price-value">от 2490 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                                <div class="advs__models_price-item">
+                                    <div class="advs__models_price-name">Ремонт двигателя</div>
+                                    <div class="advs__models_price-value">от 9900 ₽</div>
+                                </div>
+                            </div>
+                            <div class="advs__models_price-recall">
+                                <div class="recall__btn btn btn-yell" data-fancybox data-src="#recall">Записаться на ремонт BMW X6</div>
+                            </div>
+                        </div>
+                        <div class="advs__models_price-img">
+                            <img src="img/x6.png" alt="x6">
+                        </div>
+                    </div>
+                </div>
                     <div class="advs__content flex">
                         <div class="advs__desc">
                             <h2 class="advs__title h2">
@@ -901,7 +1078,7 @@
                 </div>
             </section>
 
-            <section class="recall">
+            <div class="recall">
                 <div class="container">
 
                     <form action="#" class="recall__form">
@@ -929,7 +1106,7 @@
                         <img src="img/recall-man.png" alt="">
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="reviews">
                 <div class="container flex">
                     <div class="reviews__control">
@@ -1076,7 +1253,7 @@
                 </div>
             </section>
 
-            <section class="feedback">
+            <div class="feedback">
                 <div class="container flex wrap">
                     <div class="feedback__logo">
                         <a href="/" class="logo link">
@@ -1137,7 +1314,7 @@
                     <button class="feedback__recall recall-btn btn btn-yell" data-fancybox data-src="#recall">Оставить
                         заявку</button>
                 </div>
-            </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="container">
@@ -2035,12 +2212,8 @@
                             </span>
                         </span>
                         <div class="popup__submenu brands">
-                            <!-- <div class="popup__submenu_header">
-                                    <img src="img/tech-serv.png" alt="">
-                                    <div class="popup__submenu_header-filter"></div>
-                                </div> -->
                             <div class="popup__submenu_nav">
-                                <ul class="popup__submenu_list">
+                                <div class="popup__submenu_list">
 
                                     <ul class="popup__submenu_cards">
                                         <li class="popup__submenu_item">
@@ -2279,7 +2452,7 @@
                                         </li>
                                     </ul>
 
-                                </ul>
+                                </div>
                             </div>
 
                         </div>
@@ -2342,165 +2515,165 @@
                                     </svg>
                                 </span>
                             </span>
-                            <ul class="mobile__menu_sublist">
-                                <div class="mobile__menu_sublist-close">
+                            <div class="mobile__menu_sublist">
+                                <button class="mobile__menu_sublist-close">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19.5 10H2M2 10L11 1M2 10L11 19" stroke="white" stroke-width="2" />
                                     </svg>
+                                </button>
+                                <div class="mobile__menu_subitem">
+                                    <a href="services.html" class="mobile__menu_link ">Техническое обслуживание</a>
+                                    <span class="mobile__subitem_more-btn">
+                                        <span>
+                                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.5 6.5L10.25 6.5M10.25 6.5L5.25 11.5M10.25 6.5L5.25 1.5"
+                                                    stroke="#303941" stroke-width="2" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <div class="mobile__submenu">
+                                        <div class="mobile__submenu-close">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 10H2M2 10L11 1M2 10L11 19" stroke="white"
+                                                    stroke-width="2" />
+                                            </svg>
+                                        </div>
+                                        <div class="mobile__submenu_nav">
+                                            <ul class="popup__submenu_list">
+                                                <li class="popup__submenu_item">
+                                                    <a href="service.html" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="service.html" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="service.html" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                                <li class="popup__submenu_item">
+                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <li class="mobile__menu_subitem">
-                                    <a href="" class="mobile__menu_link ">Техническое обслуживание</a>
-                                    <span class="mobile__subitem_more-btn">
-                                        <span>
-                                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0.5 6.5L10.25 6.5M10.25 6.5L5.25 11.5M10.25 6.5L5.25 1.5"
-                                                    stroke="#303941" stroke-width="2" />
-                                            </svg>
-                                        </span>
-                                    </span>
-                                    <div class="mobile__submenu">
-                                        <div class="mobile__submenu-close">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19.5 10H2M2 10L11 1M2 10L11 19" stroke="white"
-                                                    stroke-width="2" />
-                                            </svg>
-                                        </div>
-                                        <div class="mobile__submenu_nav">
-                                            <ul class="popup__submenu_list">
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                                <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="mobile__menu_subitem">
-                                    <a href="" class="mobile__menu_link">Ремонт автомобилей</a>
+                                <div class="mobile__menu_subitem">
+                                    <a href="services.html" class="mobile__menu_link">Ремонт автомобилей</a>
                                     <span class="mobile__subitem_more-btn">
                                         <span>
                                             <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
@@ -2649,9 +2822,9 @@
                                         </div>
 
                                     </div>
-                                </li>
-                                <li class="mobile__menu_subitem">
-                                    <a href="" class="mobile__menu_link">Диагностика</a>
+                                </div>
+                                <div class="mobile__menu_subitem">
+                                    <a href="services.html" class="mobile__menu_link">Диагностика</a>
                                     <span class="mobile__subitem_more-btn">
                                         <span>
                                             <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
@@ -2856,9 +3029,9 @@
                                         </div>
 
                                     </div>
-                                </li>
-                                <li class="mobile__menu_subitem">
-                                    <a href="" class="mobile__menu_link">Дополнительное оборудование</a>
+                                </div>
+                                <div class="mobile__menu_subitem">
+                                    <a href="services.html" class="mobile__menu_link">Дополнительное оборудование</a>
                                     <span class="mobile__subitem_more-btn">
                                         <span>
                                             <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
@@ -2879,11 +3052,11 @@
                                         <div class="mobile__submenu_nav">
                                             <ul class="popup__submenu_list">
                                                 <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+                                                    <a href="service.html" class="popup__submenu_link">Ремонт автомобилей</a>
 
                                                 </li>
                                                 <li class="popup__submenu_item">
-                                                    <a href="" class="popup__submenu_link">Ремонт автомобилей</a>
+                                                    <a href="service.html" class="popup__submenu_link">Ремонт автомобилей</a>
 
                                                 </li>
                                                 <li class="popup__submenu_item">
@@ -3006,8 +3179,8 @@
                                         </div>
 
                                     </div>
-                                </li>
-                                <li class="mobile__menu_subitem">
+                                </div>
+                                <div class="mobile__menu_subitem">
                                     <a href="" class="mobile__menu_link">Бренды автомобилей</a>
                                     <span class="mobile__subitem_more-btn">
                                         <span>
@@ -3028,71 +3201,71 @@
                                         </div>
                                         <div class="mobile__submenu_nav">
 
-                                            <ul class="popup__submenu_list">
+                                            <div class="popup__submenu_list">
 
                                                 <ul class="popup__submenu_cards">
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/nissan.png" alt="">
                                                             <span>Nissan</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/renault.png" alt="">
                                                             <span>Renault</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/toyota.png" alt="">
                                                             <span>Toyota</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/honda.png" alt="">
                                                             <span>Honda</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/opel.png" alt="">
                                                             <span>Opel</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/chevrolet.png" alt="">
                                                             <span>Chevrolet</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/volks.png" alt="">
                                                             <span>Volkswagen</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/peugeot.png" alt="">
                                                             <span>Peugeot</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/volvo.png" alt="">
                                                             <span>Volvo</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/huyndai.png" alt="">
                                                             <span>Hyundai</span>
                                                         </a>
                                                     </li>
                                                     <li class="popup__submenu_item">
-                                                        <a href="" class="popup__submenu_link brand">
+                                                        <a href="brand.html" class="popup__submenu_link brand">
                                                             <img src="img/mazda.png" alt="">
                                                             <span>Mazda</span>
                                                         </a>
@@ -3267,22 +3440,22 @@
                                                     </li>
                                                 </ul>
 
-                                            </ul>
+                                            </div>
                                         </div>
 
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="mobile__menu_item">
-                            <a href="" class="mobile__menu_link">О компании</a>
+                            <a href="about.html" class="mobile__menu_link">О компании</a>
 
                         </li>
                         <li class="mobile__menu_item ">
-                            <a href="" class="mobile__menu_link">Спецпредложения</a>
+                            <a href="promotions.html" class="mobile__menu_link">Спецпредложения</a>
                         </li>
                         <li class="mobile__menu_item ">
-                            <a href="" class="mobile__menu_link">Контакты</a>
+                            <a href="contacts.html" class="mobile__menu_link">Контакты</a>
                         </li>
                     </ul>
                     <button class="mobile__recall recall-btn btn btn-yell" data-fancybox data-src="#recall">Оставить
@@ -3346,7 +3519,7 @@
             <div id="recall" class="modal__content">
                 <div style="background: url(img/modal-img.png);" class="modal__img"></div>
                 <div class="modal__form">
-                    <form class="form_content">
+                    <form class="form_content" method="post" action="?">
                         <div class="recall__form_title">Оставить заявку</div>
                         <label class="recall__form_label">
                             <input type="text" name="name" placeholder="Ваше имя">
@@ -3356,7 +3529,7 @@
                             <input type="tel" name="phone" placeholder="Ваш телефон">
                             <span>*</span>
                         </label>
-                        <div class="recall__form_control flex">
+                        <div class="recall__form_control flex wrap">
                             <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
                             <label class="recall__form_agree">
                                 <input type="checkbox" name="agree" checked>
@@ -3370,7 +3543,7 @@
             <div id="request" class="modal__content">
                 <div style="background: url(img/modal-img.png);" class="modal__img"></div>
                 <div class="modal__form">
-                    <form class="form_content">
+                    <form class="form_content" method="post" action="?">
                         <div class="recall__form_title">Оставить заявку</div>
                         <label class="recall__form_label">
                             <input type="text" name="name" placeholder="Ваше имя">
@@ -3384,7 +3557,7 @@
                             <textarea rows="4" name="request" placeholder="Введите Ваш вопрос"></textarea>
                             <span>*</span>
                         </label>
-                        <div class="recall__form_control flex">
+                        <div class="recall__form_control flex wrap">
                             <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
                             <label class="recall__form_agree">
                                 <input type="checkbox" name="agree" checked>
@@ -3392,6 +3565,51 @@
                             </label>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <div id="review__form" class="modal__content">
+                <div style="background: url(img/modal-img.png);" class="modal__img"></div>
+                <div class="modal__form">
+                    <form class="form_content" enctype="multipart/form-data" method="post" action="?">
+                        <div class="recall__form_title">Оставить заявку</div>
+                        <label class="recall__form_label">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <span>*</span>
+                        </label>
+                        <label class="recall__form_label">
+                            <input type="tel" name="phone" placeholder="Ваш телефон">
+                            <span>*</span>
+                        </label>
+                        <label class="recall__form_label">
+                            <textarea rows="4" name="request" placeholder="Введите Ваш отзыв"></textarea>
+                            <span>*</span>
+                        </label>
+
+                        <label class="recall__form_label">
+                            <input type="file" name="image" multiple accept=".jpg,.jpeg,.png">
+                            
+                        </label>
+                        <div class="recall__form_control flex wrap">
+                            <button class="recall__form_submit btn btn-yell">Оставить заявку</button>
+                            <label class="recall__form_agree">
+                                <input type="checkbox" name="agree" checked>
+                                <a href="policy.html">Политика конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="form__success ">
+                        <div class="form__success_img">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13" cy="13" r="13" fill="#EFD445"/>
+                                <path d="M7.80005 13.4333L11.7 17.3333L19.9334 9.09998" stroke="#303941" stroke-width="2"/>
+                            </svg>
+                            
+                        </div>
+                        <h3 class="h3">Данные успешно отправлены</h3>
+                            <p class="text">Наш менеджер свяжется с вами в
+                                ближайшее время</p>
+                    </div>
                 </div>
             </div>
 
@@ -3413,8 +3631,9 @@
             </div>
         </div>
     </div>
-    <script src="libs/swiperjs/script.js"></script>
     <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/swiperjs/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="libs/fancybox/script.js"></script>
     <script src="js/methods.js"></script>
     <script src="js/swipers.js"></script>
